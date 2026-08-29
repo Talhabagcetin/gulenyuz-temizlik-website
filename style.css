@@ -1,0 +1,795 @@
+/* Style definitions for Gülen Yüz Temizlik Header */
+
+:root {
+    --brand-blue: #0b3154;        /* Deep professional blue (#0b3154) */
+    --brand-green: #239b41;       /* Vibrant brand green (#239b41) */
+    --accent-yellow: #fbc02d;     /* Smiley face yellow (#fbc02d) */
+    --text-dark: #333333;         /* Header nav text color */
+    --text-muted: #666666;        /* Subtext and captions color */
+    --bg-white: #ffffff;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: #ffffff;
+    color: var(--text-dark);
+    overflow-x: hidden; /* Prevent horizontal scroll on the body */
+}
+
+/* Header Container */
+.site-header {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 100%; /* Spans full width of the screen */
+    width: 100%;
+    padding: 12px 4%; /* Aligns elements to the far left and right with comfortable padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+}
+
+.logo-icon svg {
+    width: 54px;
+    height: 54px;
+    display: block;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+.brand-blue {
+    color: var(--brand-blue);
+}
+
+.brand-green {
+    color: var(--brand-green);
+}
+
+.brand-subtext {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-top: 3px;
+    letter-spacing: 0.1px;
+}
+
+/* Navigation Menu */
+.main-navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    align-items: center;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 0;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.main-navigation a:hover {
+    color: var(--brand-blue);
+}
+
+/* Active Nav Underline Style */
+.main-navigation a.active {
+    color: var(--brand-blue);
+}
+
+.main-navigation a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--brand-blue);
+    border-radius: 2px;
+}
+
+/* Contact Buttons Stack */
+.header-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 4px 14px;
+    width: 180px;
+    height: 38px;
+    transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.btn-icon {
+    font-size: 16px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+}
+
+.btn-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.phone-number {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.action-text {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Phone Button Specifics */
+.btn-phone {
+    background-color: var(--brand-green);
+    color: var(--bg-white);
+}
+
+.btn-phone:hover {
+    background-color: #1c7c34;
+}
+
+/* WhatsApp Button Specifics */
+.btn-whatsapp {
+    background-color: var(--bg-white);
+    border: 1px solid var(--brand-green);
+    color: var(--brand-green);
+}
+
+.btn-whatsapp:hover {
+    background-color: rgba(35, 155, 65, 0.04);
+}
+
+.btn-whatsapp .btn-icon {
+    color: var(--brand-green);
+    font-size: 18px;
+}
+
+
+/* ==========================================
+   Hero Section Styles (Desktop)
+   ========================================== */
+
+.hero-section {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.95) 45%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%), 
+                url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.hero-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 80px 4%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 650px;
+    width: 100%;
+}
+
+.hero-badge {
+    background-color: var(--brand-blue);
+    color: var(--bg-white);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.hero-title {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--brand-blue);
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.hero-title .highlight {
+    color: var(--brand-green);
+}
+
+.hero-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+/* Hero Action Buttons */
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    min-width: 220px;
+    height: 54px;
+    transition: all 0.25s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-btn-icon {
+    font-size: 22px;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+}
+
+.hero-btn-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-btn-text .num {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.hero-btn-text .lbl {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-top: 2px;
+}
+
+/* Call Button */
+.hero-btn.btn-call {
+    background-color: var(--brand-green);
+    color: var(--bg-white);
+}
+
+.hero-btn.btn-call:hover {
+    background-color: #1c7c34;
+}
+
+/* Chat Button */
+.hero-btn.btn-chat {
+    background-color: var(--bg-white);
+    border: 2px solid var(--brand-green);
+    color: var(--brand-green);
+}
+
+.hero-btn.btn-chat:hover {
+    background-color: rgba(35, 155, 65, 0.04);
+}
+
+.hero-btn.btn-chat .hero-btn-icon {
+    color: var(--brand-green);
+    font-size: 24px;
+}
+
+/* Hero Key Features */
+.hero-features {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-icon {
+    font-size: 18px;
+    color: var(--brand-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.feature-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--brand-blue);
+}
+
+
+/* ==========================================
+   Services Section Styles (Desktop)
+   ========================================== */
+
+.services-section {
+    padding: 80px 4%;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-header {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--brand-blue);
+    letter-spacing: -0.5px;
+}
+
+.title-underline {
+    width: 60px;
+    height: 3px;
+    background-color: var(--brand-green);
+    border-radius: 2px;
+}
+
+/* Services Grid & Cards */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.service-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: visible; /* Allows the absolute circle icon to overflow the image block */
+    padding-bottom: 25px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: #e2e8f0;
+}
+
+.card-image-container {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden; /* Clips the top of the image to rounded corners */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .card-img {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Service Card Icon Theme Colors */
+.card-icon.icon-green {
+    background-color: var(--brand-green);
+}
+
+.card-icon.icon-blue {
+    background-color: var(--brand-blue);
+}
+
+.card-icon.icon-orange {
+    background-color: #e67e22;
+}
+
+.card-icon.icon-purple {
+    background-color: #8e44ad;
+}
+
+.card-icon.icon-light-green {
+    background-color: #2ecc71;
+}
+
+.card-content {
+    padding: 38px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--brand-blue);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.card-description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* ==========================================
+   Responsive & Mobile Styles
+   ========================================== */
+
+/* Tablet Screens (e.g. iPad, small laptops) */
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 12px 3%;
+    }
+    
+    .main-navigation ul {
+        gap: 16px;
+    }
+    
+    .brand-name {
+        font-size: 22px;
+    }
+
+    /* Hero Section Tablet Adjustments */
+    .hero-container {
+        padding: 60px 3%;
+    }
+    
+    .hero-content {
+        max-width: 550px;
+    }
+    
+    .hero-title {
+        font-size: 38px;
+    }
+
+    /* Services Section Tablet Adjustments */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Mobile Screens (Landscape & Portrait) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap; /* Allows wrapping navigation to a second row */
+        padding: 10px 16px;
+        min-height: auto;
+    }
+    
+    /* Keep logo on the left */
+    .logo-container {
+        order: 1;
+    }
+    
+    .logo-icon svg {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .brand-name {
+        font-size: 20px;
+    }
+    
+    .brand-subtext {
+        font-size: 10px;
+        margin-top: 1px;
+    }
+    
+    /* Move buttons to the right, side-by-side */
+    .header-contact {
+        order: 2;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+    }
+    
+    .contact-btn {
+        width: auto;
+        height: 36px;
+        padding: 4px 12px;
+    }
+    
+    .btn-icon {
+        font-size: 14px;
+        margin-right: 6px;
+        width: 16px;
+    }
+    
+    .phone-number {
+        font-size: 11px;
+    }
+    
+    .action-text {
+        font-size: 7px;
+    }
+    
+    /* Navigation spans full width below the logo and buttons */
+    .main-navigation {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+        overflow-x: auto; /* Scroll horizontally if links overflow */
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        scrollbar-width: none; /* Hide scrollbar for clean UI (Firefox) */
+    }
+    
+    .main-navigation::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome/Safari */
+    }
+    
+    .main-navigation ul {
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 0 4px 6px 4px; /* Bottom padding for scroll breathing room */
+    }
+    
+    .main-navigation a {
+        font-size: 13px;
+    }
+    
+    .main-navigation a.active::after {
+        bottom: -4px;
+    }
+
+    /* Hero Section Mobile Adjustments */
+    .hero-section {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%), 
+                    url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1000&q=80');
+        background-size: cover;
+        background-position: center;
+        min-height: auto;
+    }
+    
+    .hero-container {
+        padding: 50px 16px;
+        justify-content: center;
+    }
+    
+    .hero-content {
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-features {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Services Section Mobile Adjustments */
+    .services-section {
+        padding: 60px 16px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+/* Small Mobile Screens (e.g. iPhone SE, <= 480px) */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 10px 12px;
+    }
+    
+    .brand-subtext {
+        display: none; /* Hide subtext to save vertical space and keep clean look */
+    }
+    
+    /* Make buttons ultra-compact on small devices by hiding digits */
+    .phone-number {
+        display: none;
+    }
+    
+    .action-text {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+    
+    .contact-btn {
+        padding: 0 10px;
+        height: 34px;
+    }
+    
+    .btn-icon {
+        margin-right: 4px;
+    }
+
+    /* Hero Section Small Mobile Adjustments */
+    .hero-container {
+        padding: 30px 12px;
+        gap: 25px;
+    }
+    
+    .hero-title {
+        font-size: 26px;
+    }
+    
+    .hero-badge {
+        font-size: 10px;
+        padding: 4px 14px;
+        margin-bottom: 16px;
+    }
+    
+    .hero-description {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+    
+    .hero-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        height: 48px;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .feature-item {
+        gap: 8px;
+    }
+
+    /* Services Section Small Mobile Adjustments */
+    .services-section {
+        padding: 50px 12px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto;
+        gap: 24px;
+    }
+}
