@@ -1,0 +1,506 @@
+/* ==========================================================================
+   Gülen Yüz Temizlik - Why Us Stylesheet (why-us.css)
+   Contains styles specific to why-us.html (Reasons Grid, Comparison Table, Reviews)
+   ========================================================================== */
+
+/* ==========================================
+   1. PAGE BANNER (HERO / BREADCRUMB)
+   ========================================== */
+.page-banner {
+    background: linear-gradient(135deg, var(--brand-blue) 0%, #153e68 100%);
+    padding: 60px 0;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 85% 30%, rgba(35, 155, 65, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.page-banner-container {
+    max-width: 100%;
+    width: auto;
+    margin: 0 4%;
+}
+
+.page-banner-content {
+    max-width: 800px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #cbdbee;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.breadcrumb a {
+    color: #cbdbee;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-yellow);
+}
+
+.breadcrumb .current {
+    color: var(--accent-yellow);
+    font-weight: 600;
+}
+
+.page-banner-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.page-banner-desc {
+    font-size: 15px;
+    color: #cbdbee;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+
+/* ==========================================
+   2. 6 MAIN REASONS GRID
+   ========================================== */
+.reasons-section {
+    padding: 80px 0 40px 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.reasons-container {
+    max-width: 100%;
+    width: auto;
+    margin: 0 4%;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.section-badge {
+    display: inline-block;
+    background-color: rgba(35, 155, 65, 0.1);
+    color: var(--brand-green);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 16px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.section-main-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--brand-blue);
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    line-height: 1.25;
+}
+
+.section-main-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.reason-card {
+    background-color: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 16px;
+    padding: 35px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(11, 49, 84, 0.04);
+    transition: all 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(11, 49, 84, 0.1);
+    border-color: #d6e2ee;
+}
+
+.reason-icon-box {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 22px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.reason-icon-box.icon-blue {
+    background-color: var(--brand-blue);
+}
+
+.reason-icon-box.icon-green {
+    background-color: var(--brand-green);
+}
+
+.reason-icon-box.icon-yellow {
+    background-color: var(--accent-yellow);
+    color: #111111;
+}
+
+.reason-icon-box.icon-purple {
+    background-color: #8e44ad;
+}
+
+.reason-title {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--brand-blue);
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.reason-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+
+/* ==========================================
+   3. COMPARISON TABLE SECTION
+   ========================================== */
+.comparison-section {
+    padding: 70px 0;
+    background-color: #fbfcfd;
+    border-top: 1px solid #f0f4f8;
+    border-bottom: 1px solid #f0f4f8;
+    width: 100%;
+}
+
+.comparison-container {
+    max-width: 100%;
+    width: auto;
+    margin: 0 4%;
+}
+
+.comparison-table-wrapper {
+    max-width: 950px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(11, 49, 84, 0.07);
+    border: 1px solid #eaf0f6;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.comparison-table thead th {
+    padding: 24px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid #eef2f6;
+}
+
+.col-feature {
+    width: 28%;
+    background-color: #f8fafc;
+    color: var(--brand-blue);
+}
+
+.col-brand {
+    width: 42%;
+    background-color: var(--brand-blue);
+    color: #ffffff;
+    text-align: center;
+}
+
+.brand-th-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 17px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.brand-th-badge i {
+    color: var(--accent-yellow);
+}
+
+.col-others {
+    width: 30%;
+    background-color: #f8fafc;
+    color: #777777;
+    text-align: center;
+}
+
+.comparison-table tbody td {
+    padding: 20px 28px;
+    border-bottom: 1px solid #f1f4f8;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.feature-name {
+    background-color: #fdfefe;
+    color: var(--brand-blue);
+    font-size: 14px;
+}
+
+.brand-cell {
+    background-color: rgba(35, 155, 65, 0.04);
+    color: var(--brand-blue);
+    font-weight: 600;
+    border-left: 2px solid rgba(35, 155, 65, 0.2);
+    border-right: 2px solid rgba(35, 155, 65, 0.2);
+}
+
+.others-cell {
+    color: #666666;
+}
+
+.check-icon {
+    color: var(--brand-green);
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.cross-icon {
+    color: #e74c3c;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+
+/* ==========================================
+   4. TESTIMONIALS SECTION
+   ========================================== */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.testimonials-container {
+    max-width: 100%;
+    width: auto;
+    margin: 0 4%;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 16px;
+    padding: 35px 28px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 22px rgba(11, 49, 84, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(11, 49, 84, 0.12);
+    border-color: #d6e2ee;
+}
+
+.stars {
+    color: var(--accent-yellow);
+    font-size: 15px;
+    margin-bottom: 18px;
+    display: flex;
+    gap: 4px;
+}
+
+.testimonial-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444444;
+    font-style: italic;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid #f1f4f8;
+    padding-top: 18px;
+}
+
+.author-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #f0f5fa;
+    color: var(--brand-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--brand-blue);
+}
+
+.author-location {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+
+/* ==========================================
+   5. RESPONSIVE WHY US STYLES
+   ========================================== */
+
+/* Tablet Screens (<= 1024px) */
+@media (max-width: 1024px) {
+    .page-banner-container,
+    .reasons-container,
+    .comparison-container,
+    .testimonials-container {
+        margin: 0 3%;
+    }
+
+    .reasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+/* Mobile Screens (<= 768px) */
+@media (max-width: 768px) {
+    .page-banner {
+        padding: 45px 0;
+    }
+
+    .page-banner-container,
+    .reasons-container,
+    .comparison-container,
+    .testimonials-container {
+        margin: 0 16px;
+    }
+
+    .page-banner-title {
+        font-size: 28px;
+    }
+
+    .section-main-title {
+        font-size: 26px;
+    }
+
+    .reasons-grid {
+        grid-template-columns: 1fr;
+        max-width: 460px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .comparison-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .comparison-table {
+        min-width: 600px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        max-width: 460px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+}
+
+/* Small Mobile Screens (<= 480px) */
+@media (max-width: 480px) {
+    .page-banner {
+        padding: 35px 0;
+    }
+
+    .page-banner-container,
+    .reasons-container,
+    .comparison-container,
+    .testimonials-container {
+        margin: 0 10px;
+    }
+
+    .page-banner-title {
+        font-size: 24px;
+    }
+
+    .section-main-title {
+        font-size: 22px;
+    }
+
+    .reason-card {
+        padding: 26px 20px;
+    }
+
+    .testimonial-card {
+        padding: 26px 20px;
+    }
+}
