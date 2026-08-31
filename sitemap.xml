@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- Ana Sayfa -->
+    <url>
+        <loc>https://www.torbaligulenyuztemizlik.com.tr/</loc>
+        <lastmod>2026-08-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- Hizmetlerimiz -->
+    <url>
+        <loc>https://www.torbaligulenyuztemizlik.com.tr/our-services.html</loc>
+        <lastmod>2026-08-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- İletişim -->
+    <url>
+        <loc>https://www.torbaligulenyuztemizlik.com.tr/contact.html</loc>
+        <lastmod>2026-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Galeri -->
+    <url>
+        <loc>https://www.torbaligulenyuztemizlik.com.tr/gallery.html</loc>
+        <lastmod>2026-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Neden Biz? -->
+    <url>
+        <loc>https://www.torbaligulenyuztemizlik.com.tr/why-us.html</loc>
+        <lastmod>2026-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Hakkımızda -->
+    <url>
+        <loc>https://www.torbaligulenyuztemizlik.com.tr/about-us.html</loc>
+        <lastmod>2026-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+</urlset>
