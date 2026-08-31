@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gülen Yüz Temizlik - Temizlikte Güven, Hizmette Güler Yüz</title>
+    <title>Hakkımızda - Gülen Yüz Temizlik</title>
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,24 +12,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Global Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Homepage Specific Stylesheet -->
-    <link rel="stylesheet" href="home.css">
+    <!-- About Us Specific Stylesheet -->
+    <link rel="stylesheet" href="about-us.css">
 </head>
 <body>
 
+    <!-- Site Header -->
     <header class="site-header">
         <div class="header-container">
             <!-- Logo Section -->
-            <a href="#" class="logo-container">
+            <a href="index.html" class="logo-container">
                 <div class="logo-icon">
                     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Smiley face yellow background with a thin black border -->
                         <circle cx="50" cy="50" r="45" fill="#fbc02d" stroke="#000000" stroke-width="2.5"/>
-                        <!-- Left eye -->
                         <circle cx="35" cy="40" r="5" fill="#000000"/>
-                        <!-- Right eye -->
                         <circle cx="65" cy="40" r="5" fill="#000000"/>
-                        <!-- Smile (Quadratic Bezier Curve) -->
                         <path d="M 32 58 Q 50 82 68 58" fill="none" stroke="#000000" stroke-width="5.5" stroke-linecap="round"/>
                     </svg>
                 </div>
@@ -45,9 +42,9 @@
             <!-- Navigation Menu -->
             <nav class="main-navigation">
                 <ul>
-                    <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                    <li><a href="index.html">Ana Sayfa</a></li>
                     <li><a href="our-services.html">Hizmetlerimiz</a></li>
-                    <li><a href="about-us.html">Hakkımızda</a></li>
+                    <li><a href="about-us.html" class="active">Hakkımızda</a></li>
                     <li><a href="#">Neden Biz?</a></li>
                     <li><a href="#">Galeri</a></li>
                     <li><a href="#">İletişim</a></li>
@@ -82,157 +79,154 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-container">
-                <!-- Hero Left Content -->
-                <div class="hero-content">
-                    <span class="hero-badge">PROFESYONEL TEMİZLİK HİZMETLERİ</span>
-                    <h1 class="hero-title">
-                        Temiz Bir Yaşam,<br>
-                        <span class="highlight">Mutlu Yüzler!</span>
-                    </h1>
-                    <p class="hero-description">
-                        Evlerden ofislere, apartmanlardan inşaat sonrası temizliğe kadar tüm ihtiyaçlarınız için profesyonel ekibimizle hizmetinizdeyiz.
+        <!-- Page Banner / Breadcrumb Hero -->
+        <section class="page-banner">
+            <div class="page-banner-container">
+                <div class="page-banner-content">
+                    <div class="breadcrumb">
+                        <a href="index.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
+                        <span>/</span>
+                        <span class="current">Hakkımızda</span>
+                    </div>
+                    <h1 class="page-banner-title">Hakkımızda</h1>
+                    <p class="page-banner-desc">
+                        Temizlikte güven, hizmette güler yüz felsefesiyle İzmir ve çevresine profesyonel hijyen çözümleri sunuyoruz.
                     </p>
-                    
-                    <!-- Hero Buttons -->
-                    <div class="hero-actions">
-                        <!-- Phone Call Button -->
-                        <a href="tel:05458153566" class="hero-btn btn-call">
-                            <div class="hero-btn-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="hero-btn-text">
-                                <span class="num">0545 815 35 66</span>
-                                <span class="lbl">HEMEN ARA</span>
-                            </div>
-                        </a>
-                        
-                        <!-- WhatsApp Chat Button -->
-                        <a href="https://wa.me/905318815469" target="_blank" class="hero-btn btn-chat">
-                            <div class="hero-btn-icon">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                            <div class="hero-btn-text">
-                                <span class="num">531 881 54 69</span>
-                                <span class="lbl">WHATSAPP'TAN YAZ</span>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!-- Hero Features -->
-                    <div class="hero-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa-solid fa-shield-halved"></i>
-                            </div>
-                            <span class="feature-text">Güvenilir Hizmet</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa-solid fa-user-group"></i>
-                            </div>
-                            <span class="feature-text">Deneyimli Ekip</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                            <span class="feature-text">Zamanında Hizmet</span>
-                        </div>
-                    </div>
                 </div>
-                
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section class="services-section">
-            <div class="services-container">
-                <div class="section-header">
-                    <h2 class="section-title">HİZMETLERİMİZ</h2>
-                    <div class="title-underline"></div>
-                     <div class="services-grid">
-                    <!-- Card 1: Ev Temizliği -->
-                    <div class="service-card">
-                        <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=400&q=80" alt="Ev Temizliği" class="card-img">
-                        </div>
-                        <div class="card-icon icon-green">
-                            <i class="fa-solid fa-house"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Ev Temizliği</h3>
-                            <p class="card-description">
-                                Evinizi hijyenik ve ferah hale getiriyoruz. Düzenli ve detaylı ev temizliği hizmetleri.
-                            </p>
+        <!-- About Story & Mission Section (2-Column) -->
+        <section class="about-story-section">
+            <div class="about-story-container">
+                <!-- Left: Media / Experience Image -->
+                <div class="about-media-wrapper">
+                    <div class="about-main-image">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Gülen Yüz Temizlik Ekibi">
+                    </div>
+                    <div class="about-exp-badge">
+                        <div class="exp-number">10+</div>
+                        <div class="exp-text">
+                            <span class="exp-title">Yıllık Tecrübe</span>
+                            <span class="exp-sub">Profesyonel Hizmet</span>
                         </div>
                     </div>
+                </div>
+
+                <!-- Right: Content & Story -->
+                <div class="about-story-content">
+                    <span class="section-badge">BİZ KİMİZ?</span>
+                    <h2 class="about-story-title">
+                        Yaşam Alanlarınıza <span class="highlight">Hijyen ve Huzur</span> Katıyoruz
+                    </h2>
+                    <p class="about-story-p">
+                        <strong>Gülen Yüz Temizlik</strong> olarak yola çıktığımız ilk günden itibaren en büyük önceliğimiz; müşterilerimizin yaşam ve çalışma alanlarını kusursuz bir temizlikle buluşturmak ve yüzlerinde memnuniyet dolu bir gülümseme bırakmaktır.
+                    </p>
+                    <p class="about-story-p">
+                        İzmir merkez başta olmak üzere Torbalı, Menderes, Gaziemir, Çeşme, Kuşadası, Urla ve çevre bölgelerde ev, villa, ofis, apartman, inşaat sonrası ve endüstriyel temizlik alanlarında deneyimli kadromuz ve modern ekipmanlarımızla hizmet vermekteyiz.
+                    </p>
                     
-                    <!-- Card 2: Ofis ve İşyeri Temizliği -->
-                    <div class="service-card">
-                        <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=80" alt="Ofis ve İşyeri Temizliği" class="card-img">
+                    <ul class="about-highlights-list">
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Çevre ve insan sağlığına dost, kaliteli ve sertifikalı temizlik ürünleri</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Detaylı kontrol süreci ve %100 koşulsuz müşteri memnuniyeti ilkesi</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Eğitimli, güvenilir, titiz ve güler yüzlü profesyonel çalışma ekibi</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Zamanında hizmet, şeffaf fiyatlandırma ve esnek randevu imkanları</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section (4 Cards) -->
+        <section class="values-section">
+            <div class="values-container">
+                <div class="section-intro">
+                    <span class="section-badge">TEMEL DEĞERLERİMİZ</span>
+                    <h2 class="section-main-title">Bizi Farklı Kılan Değerlerimiz</h2>
+                    <p class="section-main-desc">Müşterilerimize sunduğumuz her hizmetin arkasında taviz vermediğimiz çalışma prensiplerimiz yer alır.</p>
+                </div>
+
+                <div class="values-grid">
+                    <!-- Value 1 -->
+                    <div class="value-card">
+                        <div class="value-icon-box icon-blue">
+                            <i class="fa-solid fa-handshake"></i>
                         </div>
-                        <div class="card-icon icon-blue">
-                            <i class="fa-solid fa-building"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Ofis ve İşyeri Temizliği</h3>
-                            <p class="card-description">
-                                Ofislerinizi, iş yerlerinizi temiz ve düzenli tutuyoruz. Daha sağlıklı bir çalışma ortamı sağlıyoruz.
-                            </p>
-                        </div>
+                        <h3 class="value-card-title">Güven ve Şeffaflık</h3>
+                        <p class="value-card-desc">
+                            Ev ve iş yerlerinizi gönül rahatlığıyla teslim edebileceğiniz güvenilir ve dürüst bir hizmet anlayışı benimsiyoruz.
+                        </p>
                     </div>
-                    
-                    <!-- Card 3: Apartman Temizliği -->
-                    <div class="service-card">
-                        <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=400&q=80" alt="Apartman Temizliği" class="card-img">
+
+                    <!-- Value 2 -->
+                    <div class="value-card">
+                        <div class="value-icon-box icon-green">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
                         </div>
-                        <div class="card-icon icon-orange">
-                            <i class="fa-solid fa-city"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Apartman Temizliği</h3>
-                            <p class="card-description">
-                                Apartman girişleri, merdiven ve ortak alanların düzenli ve hijyenik temizliğini gerçekleştiriyoruz.
-                            </p>
-                        </div>
+                        <h3 class="value-card-title">Kusursuz Hijyen</h3>
+                        <p class="value-card-desc">
+                            Görünür temizliğin ötesinde, bakteri ve mikroplardan arındırılmış gerçek ve derinlemesine hijyen sağlıyoruz.
+                        </p>
                     </div>
-                    
-                    <!-- Card 4: İnşaat Sonrası Temizliği -->
-                    <div class="service-card">
-                        <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" alt="İnşaat Sonrası Temizliği" class="card-img">
+
+                    <!-- Value 3 -->
+                    <div class="value-card">
+                        <div class="value-icon-box icon-yellow">
+                            <i class="fa-solid fa-face-smile"></i>
                         </div>
-                        <div class="card-icon icon-purple">
-                            <i class="fa-solid fa-helmet-safety"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">İnşaat Sonrası Temizliği</h3>
-                            <p class="card-description">
-                                İnşaat sonrası oluşan toz, kir ve molozları temizleyerek yaşam alanlarınızı kullanıma hazır hale getiriyoruz.
-                            </p>
-                        </div>
+                        <h3 class="value-card-title">Güler Yüzlü Hizmet</h3>
+                        <p class="value-card-desc">
+                            İşimizi severek yapıyor, iletişimden uygulamaya her adımda güler yüz ve samimiyetle yaklaşıyoruz.
+                        </p>
                     </div>
-                    
-                    <!-- Card 5: Bahçe Temizliği -->
-                    <div class="service-card">
-                        <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=500&q=80" alt="Bahçe Temizliği" class="card-img">
+
+                    <!-- Value 4 -->
+                    <div class="value-card">
+                        <div class="value-icon-box icon-purple">
+                            <i class="fa-solid fa-stopwatch"></i>
                         </div>
-                        <div class="card-icon icon-light-green">
-                            <i class="fa-solid fa-leaf"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Bahçe Temizliği</h3>
-                            <p class="card-description">
-                                Bahçe, site çevresi ve açık alanların temizliği ile daha düzenli ve yaşanabilir alanlar sunuyoruz.
-                            </p>
-                        </div>
+                        <h3 class="value-card-title">Zamanında Teslimat</h3>
+                        <p class="value-card-desc">
+                            Belirlenen randevu saatine sadık kalarak, söz verdiğimiz sürede işimizi eksiksiz ve titizlikle bitiriyoruz.
+                        </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Yıllık Sektör Deneyimi</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-number">2.500+</div>
+                    <div class="stat-label">Mutlu Müşteri</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Uzman Ekip Üyesi</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+                    <div class="stat-number">%100</div>
+                    <div class="stat-label">Memnuniyet Oranı</div>
                 </div>
             </div>
         </section>
@@ -260,7 +254,7 @@
             </div>
         </section>
 
-        <!-- Promo Section -->
+        <!-- Promo Section (Free Quote / CTA) -->
         <section class="promo-section">
             <div class="promo-container">
                 <!-- Promo Text Content -->
