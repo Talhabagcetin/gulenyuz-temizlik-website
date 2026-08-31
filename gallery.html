@@ -51,32 +51,90 @@
                 </ul>
             </nav>
 
-            <!-- Contact Buttons -->
-            <div class="header-contact">
-                <!-- Phone Call Button -->
-                <a href="tel:05458153566" class="contact-btn btn-phone">
-                    <div class="btn-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="btn-content">
-                        <span class="phone-number">0545 815 35 66</span>
-                        <span class="action-text">ARA</span>
-                    </div>
-                </a>
-                
-                <!-- WhatsApp Chat Button -->
-                <a href="https://wa.me/905318815469" target="_blank" class="contact-btn btn-whatsapp">
-                    <div class="btn-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <div class="btn-content">
-                        <span class="phone-number">531 881 54 69</span>
-                        <span class="action-text">WHATSAPP</span>
-                    </div>
-                </a>
+            <!-- Header Right Group (Contact Buttons + Mobile Toggle) -->
+            <div class="header-right-group">
+                <div class="header-contact">
+                    <!-- Phone Call Button -->
+                    <a href="tel:05458153566" class="contact-btn btn-phone">
+                        <div class="btn-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="btn-content">
+                            <span class="phone-number">0545 815 35 66</span>
+                            <span class="action-text">ARA</span>
+                        </div>
+                    </a>
+                    
+                    <!-- WhatsApp Chat Button -->
+                    <a href="https://wa.me/905318815469" target="_blank" class="contact-btn btn-whatsapp">
+                        <div class="btn-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="btn-content">
+                            <span class="phone-number">531 881 54 69</span>
+                            <span class="action-text">WHATSAPP</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Hamburger Button -->
+                <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menüyü Aç">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Drawer & Backdrop -->
+    <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="mobile-drawer-header">
+            <div class="drawer-logo">
+                <div class="drawer-logo-icon">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="#fbc02d" stroke="#000000" stroke-width="2.5"/>
+                        <circle cx="35" cy="40" r="5" fill="#000000"/>
+                        <circle cx="65" cy="40" r="5" fill="#000000"/>
+                        <path d="M 32 58 Q 50 82 68 58" fill="none" stroke="#000000" stroke-width="5.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="drawer-brand-name">
+                    <span class="brand-blue">GÜLEN YÜZ</span>
+                    <span class="brand-green">TEMİZLİK</span>
+                </div>
+            </div>
+            <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Menüyü Kapat">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav class="mobile-drawer-nav">
+            <ul>
+                <li><a href="index.html" class="drawer-link"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+                <li><a href="our-services.html" class="drawer-link"><i class="fa-solid fa-broom"></i> Hizmetlerimiz</a></li>
+                <li><a href="about-us.html" class="drawer-link"><i class="fa-solid fa-circle-info"></i> Hakkımızda</a></li>
+                <li><a href="why-us.html" class="drawer-link"><i class="fa-solid fa-shield-heart"></i> Neden Biz?</a></li>
+                <li><a href="gallery.html" class="drawer-link active"><i class="fa-solid fa-images"></i> Galeri</a></li>
+                <li><a href="contact.html" class="drawer-link"><i class="fa-solid fa-phone"></i> İletişim</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-drawer-footer">
+            <div class="drawer-contact-buttons">
+                <a href="tel:05458153566" class="drawer-btn btn-call">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0545 815 35 66</span>
+                </a>
+                <a href="https://wa.me/905318815469" target="_blank" class="drawer-btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp İle İletişim</span>
+                </a>
+            </div>
+            <p class="drawer-slogan">Temizlikte güven, hizmette güler yüz.</p>
+        </div>
+    </div>
 
     <main>
         <!-- Page Banner / Breadcrumb Hero -->
@@ -475,5 +533,7 @@
             });
         });
     </script>
+    <!-- Main Global Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>
