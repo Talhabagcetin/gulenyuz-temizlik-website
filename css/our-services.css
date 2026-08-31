@@ -130,11 +130,11 @@
     line-height: 1.6;
 }
 
-/* 4-Card Detailed Grid */
+/* 3-Card Detailed Grid */
 .services-detail-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 26px;
     margin-bottom: 40px;
 }
 

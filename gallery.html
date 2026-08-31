@@ -11,9 +11,9 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Global Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Gallery Specific Stylesheet -->
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
 
@@ -108,11 +108,12 @@
                 <!-- Gallery Filter Buttons -->
                 <div class="gallery-filters">
                     <button class="filter-btn active" data-filter="all">Tümü</button>
-                    <button class="filter-btn" data-filter="home">Ev & Villa</button>
-                    <button class="filter-btn" data-filter="office">Ofis & İş Yeri</button>
+                    <button class="filter-btn" data-filter="home">Ev Temizliği</button>
+                    <button class="filter-btn" data-filter="villa">Villa Temizliği</button>
+                    <button class="filter-btn" data-filter="office">Ofis Temizliği</button>
+                    <button class="filter-btn" data-filter="commercial">İş Yeri Temizliği</button>
                     <button class="filter-btn" data-filter="construction">İnşaat Sonrası</button>
-                    <button class="filter-btn" data-filter="upholstery">Koltuk & Halı</button>
-                    <button class="filter-btn" data-filter="outdoor">Dış Cephe & Bahçe</button>
+                    <button class="filter-btn" data-filter="stairs">Merdiven Temizliği</button>
                 </div>
 
                 <!-- Gallery Items Grid (12 Items) -->
@@ -122,32 +123,32 @@
                         <div class="gallery-card">
                             <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="Detaylı Ev ve Salon Temizliği">
                             <div class="gallery-overlay">
-                                <span class="gallery-category">Ev & Villa</span>
+                                <span class="gallery-category">Ev Temizliği</span>
                                 <h3 class="gallery-item-title">Detaylı Salon Temizliği</h3>
                                 <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 2: Mutfak Hijyeni -->
+                    <!-- Item 2: Ev Temizliği - Mutfak Hijyeni -->
                     <div class="gallery-item" data-category="home">
                         <div class="gallery-card">
                             <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=80" alt="Mutfak ve Ankastre Temizliği">
                             <div class="gallery-overlay">
-                                <span class="gallery-category">Ev & Villa</span>
+                                <span class="gallery-category">Ev Temizliği</span>
                                 <h3 class="gallery-item-title">Mutfak & Ankastre Hijyeni</h3>
                                 <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 3: Ofis & Çalışma Alanı -->
+                    <!-- Item 3: Ofis Temizliği - Çalışma Alanı -->
                     <div class="gallery-item" data-category="office">
                         <div class="gallery-card">
                             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=80" alt="Modern Ofis Temizliği">
                             <div class="gallery-overlay">
-                                <span class="gallery-category">Ofis & İş Yeri</span>
-                                <h3 class="gallery-item-title">Kurumsal Ofis Temizliği</h3>
+                                <span class="gallery-category">Ofis Temizliği</span>
+                                <h3 class="gallery-item-title">Kurumsal Ofis & Masa Hijyeni</h3>
                                 <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                             </div>
                         </div>
@@ -165,97 +166,97 @@
                         </div>
                     </div>
 
-                    <!-- Item 5: Koltuk Yıkama -->
-                    <div class="gallery-item" data-category="upholstery">
+                    <!-- Item 5: Merdiven Temizliği -->
+                    <div class="gallery-item" data-category="stairs">
                         <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Vakumlu Koltuk Yıkama">
+                            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=700&q=80" alt="Merdiven Temizliği">
                             <div class="gallery-overlay">
-                                <span class="gallery-category">Koltuk & Halı</span>
-                                <h3 class="gallery-item-title">Yerinde Derinlemesine Koltuk Yıkama</h3>
+                                <span class="gallery-category">Merdiven Temizliği</span>
+                                <h3 class="gallery-item-title">Periyodik Merdiven & Korkuluk Silimi</h3>
                                 <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 6: Banyo Sterilizasyonu -->
-                    <div class="gallery-item" data-category="home">
+                    <!-- Item 6: İş Yeri Temizliği - Klinik / İşletme -->
+                    <div class="gallery-item" data-category="commercial">
                         <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=700&q=80" alt="Banyo ve Fayans Dezenfeksiyonu">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=700&q=80" alt="İş Yeri ve Klinik Hijyeni">
                             <div class="gallery-overlay">
-                                <span class="gallery-category">Ev & Villa</span>
-                                <h3 class="gallery-item-title">Banyo Kireç & Derz Temizliği</h3>
+                                <span class="gallery-category">İş Yeri Temizliği</span>
+                                <h3 class="gallery-item-title">Klinik & İş Yeri Dezenfeksiyonu</h3>
                                 <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 7: Plaza & Dış Cephe Cam Silimi -->
-                    <div class="gallery-item" data-category="outdoor">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=700&q=80" alt="Dış Cephe Cam Temizliği">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Dış Cephe & Bahçe</span>
-                                <h3 class="gallery-item-title">Plaza & Dış Cephe Cam Silimi</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 8: Bahçe & Dış Alan -->
-                    <div class="gallery-item" data-category="outdoor">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=700&q=80" alt="Bahçe ve Çevre Temizliği">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Dış Cephe & Bahçe</span>
-                                <h3 class="gallery-item-title">Bahçe & Site Çevre Düzeni</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 9: Toplantı Odası & Ofis -->
+                    <!-- Item 7: Ofis Temizliği - Toplantı Odası -->
                     <div class="gallery-item" data-category="office">
                         <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=700&q=80" alt="Toplantı Salonu Hijyeni">
+                            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=700&q=80" alt="Toplantı Odası Temizliği">
                             <div class="gallery-overlay">
-                                <span class="gallery-category">Ofis & İş Yeri</span>
-                                <h3 class="gallery-item-title">Toplantı Odası & Masa Bakımı</h3>
+                                <span class="gallery-category">Ofis Temizliği</span>
+                                <h3 class="gallery-item-title">Toplantı Salonu & Büro Bakımı</h3>
                                 <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 10: Villa Yaşam Alanı -->
-                    <div class="gallery-item" data-category="home">
+                    <!-- Item 8: Villa Temizliği - Dubleks & Veranda -->
+                    <div class="gallery-item" data-category="villa">
+                        <div class="gallery-card">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Villa ve Veranda Temizliği">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Villa Temizliği</span>
+                                <h3 class="gallery-item-title">Villa & Teras Detaylı Temizliği</h3>
+                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: İş Yeri Temizliği - Mağaza & Showroom -->
+                    <div class="gallery-item" data-category="commercial">
+                        <div class="gallery-card">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=700&q=80" alt="Mağaza ve Showroom Temizliği">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">İş Yeri Temizliği</span>
+                                <h3 class="gallery-item-title">Mağaza & Showroom Temizliği</h3>
+                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 10: Villa Temizliği - Müstakil Villa -->
+                    <div class="gallery-item" data-category="villa">
                         <div class="gallery-card">
                             <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=80" alt="Villa Detaylı Temizlik">
                             <div class="gallery-overlay">
-                                <span class="gallery-category">Ev & Villa</span>
-                                <h3 class="gallery-item-title">Villa Genel Temizliği</h3>
+                                <span class="gallery-category">Villa Temizliği</span>
+                                <h3 class="gallery-item-title">Müstakil Villa Genel Hijyeni</h3>
                                 <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 11: Zemin Cilalama & Parlatma -->
+                    <!-- Item 11: İnşaat Sonrası Temizlik - Zemin -->
                     <div class="gallery-item" data-category="construction">
                         <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=700&q=80" alt="Zemin Parlatma ve Temizlik">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=700&q=80" alt="Zemin ve Parke Detaylı Silimi">
                             <div class="gallery-overlay">
                                 <span class="gallery-category">İnşaat Sonrası</span>
-                                <h3 class="gallery-item-title">Zemin Kazıma & Parlatma</h3>
+                                <h3 class="gallery-item-title">Zemin & Parke Detaylı Silimi</h3>
                                 <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 12: Halı ve Yatak Yıkama -->
-                    <div class="gallery-item" data-category="upholstery">
+                    <!-- Item 12: Merdiven Temizliği - Bina Girişi -->
+                    <div class="gallery-item" data-category="stairs">
                         <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=700&q=80" alt="Yatak ve Halı Yıkama">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80" alt="Bina Girişi ve Merdiven Hijyeni">
                             <div class="gallery-overlay">
-                                <span class="gallery-category">Koltuk & Halı</span>
-                                <h3 class="gallery-item-title">Anti-Bakteriyel Yatak Hijyeni</h3>
+                                <span class="gallery-category">Merdiven Temizliği</span>
+                                <h3 class="gallery-item-title">Bina Girişi & Sahanlık Hijyeni</h3>
                                 <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                             </div>
                         </div>

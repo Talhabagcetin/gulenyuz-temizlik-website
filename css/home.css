@@ -218,11 +218,11 @@
     border-radius: 2px;
 }
 
-/* 5-Card Grid */
+/* 6-Card Grid (3x2) */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px 24px;
     width: 100%;
 }
 

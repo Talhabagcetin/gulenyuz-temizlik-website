@@ -11,9 +11,9 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Global Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Contact Specific Stylesheet -->
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 
@@ -90,13 +90,13 @@
                     </div>
                     <h1 class="page-banner-title">Bizimle İletişime Geçin</h1>
                     <p class="page-banner-desc">
-                        Temizlik ihtiyaçlarınız, ücretsiz keşif ve hızlı fiyat teklifi için bize 7/24 dilediğiniz kanaldan ulaşabilirsiniz.
+                        Temizlik ihtiyaçlarınız, ücretsiz keşif ve hızlı fiyat teklifi için telefon veya WhatsApp üzerinden bize dilediğiniz an ulaşabilirsiniz.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Cards Section (3 Cards) -->
+        <!-- Contact Cards Section (3 Direct Action Cards) -->
         <section class="contact-cards-section">
             <div class="contact-cards-container">
                 <!-- Card 1: Phone -->
@@ -107,7 +107,7 @@
                     <div class="contact-card-content">
                         <span class="contact-card-label">Telefon ile Arayın</span>
                         <h3 class="contact-card-value">0545 815 35 66</h3>
-                        <p class="contact-card-desc">7 Gün 24 Saat kesintisiz arama ve acil randevu desteği.</p>
+                        <p class="contact-card-desc">7 Gün 24 Saat kesintisiz arama ve hızlı randevu oluşturma hattı.</p>
                         <a href="tel:05458153566" class="contact-card-action btn-card-phone">
                             <i class="fa-solid fa-phone-volume"></i> Hemen Ara
                         </a>
@@ -115,16 +115,16 @@
                 </div>
 
                 <!-- Card 2: WhatsApp -->
-                <div class="contact-info-card">
+                <div class="contact-info-card highlight-card">
                     <div class="contact-card-icon icon-green">
                         <i class="fa-brands fa-whatsapp"></i>
                     </div>
                     <div class="contact-card-content">
-                        <span class="contact-card-label">WhatsApp'tan Yazın</span>
+                        <span class="contact-card-label">WhatsApp ile Yazın</span>
                         <h3 class="contact-card-value">531 881 54 69</h3>
-                        <p class="contact-card-desc">Fotoğraf veya detay göndererek anında hızlı teklif alın.</p>
-                        <a href="https://wa.me/905318815469" target="_blank" class="contact-card-action btn-card-whatsapp">
-                            <i class="fa-brands fa-whatsapp"></i> Mesaj Gönder
+                        <p class="contact-card-desc">Fotoğraf veya detay göndererek dakikalar içinde net fiyat teklifi alın.</p>
+                        <a href="https://wa.me/905318815469?text=Merhaba,%20temizlik%20hizmeti%20için%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="contact-card-action btn-card-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Sohbeti Başlat
                         </a>
                     </div>
                 </div>
@@ -137,139 +137,141 @@
                     <div class="contact-card-content">
                         <span class="contact-card-label">Hizmet Bölgemiz</span>
                         <h3 class="contact-card-value">İzmir ve Çevresi</h3>
-                        <p class="contact-card-desc">Torbalı, Menderes, Gaziemir, Çeşme, Urla ve tüm ilçeler.</p>
-                        <span class="contact-card-tag">Mobil Saha Ekipleri</span>
+                        <p class="contact-card-desc">Torbalı, Menderes, Gaziemir, Çeşme, Urla ve tüm çevre ilçeler.</p>
+                        <span class="contact-card-tag">Tüm İzmir & Çevre İlçeler</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Form & Hours Section (2 Column) -->
-        <section class="contact-form-section">
-            <div class="contact-form-container">
-                <!-- Left: Form -->
-                <div class="form-wrapper">
-                    <div class="form-header">
-                        <span class="section-badge">HIZLI TEKLİF FORMU</span>
-                        <h2 class="form-title">Ücretsiz Fiyat Teklifi İsteyin</h2>
-                        <p class="form-subtitle">Formu doldurun, uzman ekibimiz en kısa sürede size özel fiyat teklifiyle geri dönüş yapsın.</p>
+        <!-- Direct Booking & Info Section (2 Column) -->
+        <section class="direct-booking-section">
+            <div class="direct-booking-container">
+                <!-- Left: 3-Step WhatsApp Guide -->
+                <div class="guide-box">
+                    <span class="section-badge">KOLAY VE HIZLI</span>
+                    <h2 class="guide-title">WhatsApp'tan 3 Adımda Kolay Fiyat Alın</h2>
+                    <p class="guide-desc">Uzun formlar doldurmakla vakit kaybetmeyin. Doğrudan WhatsApp hattımıza yazarak en hızlı şekilde fiyat ve randevu alın.</p>
+
+                    <div class="guide-steps">
+                        <!-- Step 1 -->
+                        <div class="guide-step-item">
+                            <div class="guide-step-num">1</div>
+                            <div class="guide-step-content">
+                                <h4 class="guide-step-title">İhtiyacınızı Yazın veya Fotoğraf Atın</h4>
+                                <p class="guide-step-text">Temizlenecek evin (örn: 3+1 boş daire), ofisin veya koltuğun durumunu kısaca belirtin.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="guide-step-item">
+                            <div class="guide-step-num">2</div>
+                            <div class="guide-step-content">
+                                <h4 class="guide-step-title">Anında Net ve Sabit Fiyat Alın</h4>
+                                <p class="guide-step-text">Sürpriz ek ücretler olmadan, dakikalar içinde en şeffaf ve uygun fiyat teklifimizi sunalım.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="guide-step-item">
+                            <div class="guide-step-num">3</div>
+                            <div class="guide-step-content">
+                                <h4 class="guide-step-title">Randevunuzu Oluşturun</h4>
+                                <p class="guide-step-text">Size en uygun gün ve saati belirleyelim, tam vaktinde pırıl pırıl bir temizlik sunalım.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <form class="contact-form" id="quoteForm" onsubmit="event.preventDefault(); sendToWhatsApp();">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="fullName">Adınız ve Soyadınız *</label>
-                                <div class="input-with-icon">
-                                    <i class="fa-solid fa-user"></i>
-                                    <input type="text" id="fullName" placeholder="Örn: Ahmet Yılmaz" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="phoneNumber">Telefon Numaranız *</label>
-                                <div class="input-with-icon">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <input type="tel" id="phoneNumber" placeholder="Örn: 0545 123 45 67" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="serviceType">Temizlik Hizmeti Türü *</label>
-                                <div class="input-with-icon">
-                                    <i class="fa-solid fa-broom"></i>
-                                    <select id="serviceType" required>
-                                        <option value="" disabled selected>Hizmet Seçiniz...</option>
-                                        <option value="Ev ve Villa Temizliği">Ev ve Villa Temizliği</option>
-                                        <option value="Ofis ve İş Yeri Temizliği">Ofis ve İş Yeri Temizliği</option>
-                                        <option value="İnşaat Sonrası Temizlik">İnşaat Sonrası Temizlik</option>
-                                        <option value="Koltuk ve Halı Yıkama">Koltuk ve Halı Yıkama</option>
-                                        <option value="Apartman ve Merdiven Temizliği">Apartman ve Merdiven Temizliği</option>
-                                        <option value="Bahçe ve Dış Alan Temizliği">Bahçe ve Dış Alan Temizliği</option>
-                                        <option value="Dış Cephe ve Cam Silimi">Dış Cephe ve Cam Silimi</option>
-                                        <option value="Fabrika ve Depo Temizliği">Fabrika ve Depo Temizliği</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="district">Bulunduğunuz İlçe / Bölge *</label>
-                                <div class="input-with-icon">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <select id="district" required>
-                                        <option value="" disabled selected>İlçe Seçiniz...</option>
-                                        <option value="Gaziemir">Gaziemir</option>
-                                        <option value="Torbalı">Torbalı</option>
-                                        <option value="Menderes">Menderes</option>
-                                        <option value="Çeşme">Çeşme</option>
-                                        <option value="Kuşadası">Kuşadası</option>
-                                        <option value="Urla">Urla</option>
-                                        <option value="Gümüldür">Gümüldür</option>
-                                        <option value="Konak / Merkez">Konak / Merkez</option>
-                                        <option value="Bornova">Bornova</option>
-                                        <option value="Karşıyaka">Karşıyaka</option>
-                                        <option value="Diğer İzmir Bölgesi">Diğer İzmir Bölgesi</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Mekan Detayları / Notunuz (Opsiyonel)</label>
-                            <div class="input-with-icon input-textarea">
-                                <i class="fa-solid fa-message"></i>
-                                <textarea id="message" rows="4" placeholder="Örn: 3+1 boş daire inşaat sonrası temizlik, balkon dahil..."></textarea>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="submit-btn">
-                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Üzerinden Teklif Al
-                        </button>
-                    </form>
+                    <a href="https://wa.me/905318815469?text=Merhaba,%20temizlik%20hizmeti%20için%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="guide-cta-btn">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp ile Hemen Fiyat Teklifi Al
+                    </a>
                 </div>
 
-                <!-- Right: Working Hours & Support Info -->
+                <!-- Right: Booking & Contact Highlights -->
                 <div class="hours-info-wrapper">
-                    <!-- Hours Box -->
+                    <!-- Info / Service Guarantee Box -->
                     <div class="hours-card">
                         <div class="hours-icon-box">
-                            <i class="fa-solid fa-clock"></i>
+                            <i class="fa-solid fa-calendar-check"></i>
                         </div>
-                        <h3 class="hours-card-title">Çalışma Saatlerimiz</h3>
-                        <p class="hours-card-sub">Haftanın her günü kesintisiz hizmetinizdeyiz.</p>
+                        <h3 class="hours-card-title">Kolay Randevu & İletişim</h3>
+                        <p class="hours-card-sub">Size en uygun zamanda, hızlı ve zahmetsiz temizlik planlaması.</p>
                         
-                        <ul class="hours-list">
-                            <li>
-                                <span class="day">Pazartesi - Cuma:</span>
-                                <span class="time">08:00 - 20:00</span>
-                            </li>
-                            <li>
-                                <span class="day">Cumartesi:</span>
-                                <span class="time">08:00 - 20:00</span>
-                            </li>
-                            <li>
-                                <span class="day">Pazar:</span>
-                                <span class="time">08:30 - 19:30</span>
-                            </li>
-                        </ul>
-
-                        <div class="emergency-badge">
-                            <i class="fa-solid fa-headset"></i>
-                            <div>
-                                <strong>7/24 WhatsApp & Telefon:</strong>
-                                <span>Acil randevu ve teklif talepleriniz anında yanıtlanır.</span>
+                        <div class="contact-highlights-list">
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div class="highlight-info">
+                                    <strong>Esnek Randevu Kolaylığı</strong>
+                                    <span>Programınıza ve müsaitliğinize en uygun gün için kolayca randevu oluşturun.</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-comments"></i></div>
+                                <div class="highlight-info">
+                                    <strong>Hızlı & Doğrudan İletişim</strong>
+                                    <span>WhatsApp üzerinden dilediğiniz zaman yazabilir, detaylı bilgi ve fiyat alabilirsiniz.</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-tags"></i></div>
+                                <div class="highlight-info">
+                                    <strong>Şeffaf & Sabit Fiyat</strong>
+                                    <span>Önceden konuşulan detaylara göre net fiyat belirlenir, sürpriz ücret çıkmaz.</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Map / Location Box -->
-                    <div class="map-card">
-                        <div class="map-header">
-                            <i class="fa-solid fa-map-location-dot"></i>
-                            <span>İzmir Geneli Mobil Hizmet</span>
+                    <!-- Direct Contact Advantage Box -->
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fa-solid fa-bolt"></i>
                         </div>
-                        <p class="map-text">
-                            Ekiplerimiz tam donanımlı temizlik araçlarıyla adresinize gelerek yerinde hizmet vermektedir.
-                        </p>
+                        <div class="advantage-text">
+                            <h4>Doğrudan İletişim Avantajı</h4>
+                            <p>Aracı komisyonları veya bekleme olmadan, doğrudan temizlik ekibi sorumlusuna ulaşarak en net bilgiyi alırsınız.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (Sıkça Sorulan Sorular) -->
+        <section class="faq-section">
+            <div class="faq-container">
+                <div class="section-intro">
+                    <span class="section-badge">MERAK EDİLENLER</span>
+                    <h2 class="section-main-title">Sıkça Sorulan Sorular</h2>
+                    <p class="section-main-desc">İletişim ve hizmet süreçlerimizle ilgili en çok sorulan soruların yanıtları.</p>
+                </div>
+
+                <div class="faq-grid">
+                    <!-- FAQ 1 -->
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="fa-solid fa-circle-question"></i></div>
+                        <h3 class="faq-question">Fiyat teklifini ne kadar sürede alabilirim?</h3>
+                        <p class="faq-answer">WhatsApp hattımıza mekanın oda sayısını, durumunu veya birkaç fotoğrafını ilettiğinizde ortalama 5-10 dakika içerisinde net ve sabit fiyat teklifimizi sunuyoruz.</p>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="fa-solid fa-circle-question"></i></div>
+                        <h3 class="faq-question">Temizlik malzemelerini  siz mi getiriyorsunuz?</h3>
+                        <p class="faq-answer">Evet, temizlikte kullanılan tüm profesyonel  birinci sınıf temizlik solüsyonları, bezler ve malzemeler tarafımızdan eksiksiz temin edilir.</p>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="fa-solid fa-circle-question"></i></div>
+                        <h3 class="faq-question">Hizmet sonrası kontrol nasıl yapılıyor?</h3>
+                        <p class="faq-answer">Temizlik bittiğinde alanlar sizinle birlikte tek tek incelenir. Gözden kaçan herhangi bir nokta olursa anında giderilir ve %100 onayınızla teslim edilir.</p>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="fa-solid fa-circle-question"></i></div>
+                        <h3 class="faq-question">Hangi bölgelere hizmet veriyorsunuz?</h3>
+                        <p class="faq-answer">İzmir merkez ilçeleri (Gaziemir, Konak, Bornova, Karşıyaka vb.) başta olmak üzere Torbalı, Menderes, Çeşme, Kuşadası, Urla ve tüm çevre bölgelere hizmet veriyoruz.</p>
                     </div>
                 </div>
             </div>
@@ -321,7 +323,7 @@
                     </a>
                     
                     <!-- WhatsApp CTA Button -->
-                    <a href="https://wa.me/905318815469" target="_blank" class="promo-btn btn-promo-whatsapp">
+                    <a href="https://wa.me/905318815469?text=Merhaba,%20temizlik%20hizmeti%20için%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="promo-btn btn-promo-whatsapp">
                         <div class="promo-btn-icon">
                             <i class="fa-brands fa-whatsapp"></i>
                         </div>
@@ -461,28 +463,5 @@
         </div>
     </footer>
 
-    <!-- Form To WhatsApp JS Script -->
-    <script>
-        function sendToWhatsApp() {
-            const name = document.getElementById('fullName').value.trim();
-            const phone = document.getElementById('phoneNumber').value.trim();
-            const service = document.getElementById('serviceType').value;
-            const district = document.getElementById('district').value;
-            const message = document.getElementById('message').value.trim();
-
-            let text = `*Yeni Temizlik Talebi (Web Sitesi Formu)*\n\n`;
-            text += `*Müşteri:* ${name}\n`;
-            text += `*Telefon:* ${phone}\n`;
-            text += `*Hizmet:* ${service}\n`;
-            text += `*Bölge / İlçe:* ${district}\n`;
-            if (message) {
-                text += `*Not:* ${message}\n`;
-            }
-
-            const encodedText = encodeURIComponent(text);
-            const whatsappUrl = `https://wa.me/905318815469?text=${encodedText}`;
-            window.open(whatsappUrl, '_blank');
-        }
-    </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /* ==========================================================================
-   Gülen Yüz Temizlik - Contact Stylesheet (contact.css)
-   Contains styles specific to contact.html (Cards, Quote Form, Working Hours)
+   Gülen Yüz Temizlik - Contact Stylesheet (css/contact.css)
+   Contains styles specific to contact.html (Direct Cards, Booking Guide, FAQ)
    ========================================================================== */
 
 /* ==========================================
@@ -85,7 +85,7 @@
    2. CONTACT INFO CARDS (3 CARDS)
    ========================================== */
 .contact-cards-section {
-    padding: 60px 0 30px 0;
+    padding: 70px 0 30px 0;
     background-color: #ffffff;
     width: 100%;
 }
@@ -102,20 +102,25 @@
 .contact-info-card {
     background-color: #ffffff;
     border: 1px solid #eef2f6;
-    border-radius: 16px;
+    border-radius: 20px;
     padding: 35px 28px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 0 4px 20px rgba(11, 49, 84, 0.05);
+    box-shadow: 0 6px 22px rgba(11, 49, 84, 0.05);
     transition: all 0.3s ease;
     position: relative;
 }
 
 .contact-info-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(11, 49, 84, 0.12);
+    box-shadow: 0 14px 32px rgba(11, 49, 84, 0.12);
     border-color: #d6e2ee;
+}
+
+.contact-info-card.highlight-card {
+    border-color: rgba(35, 155, 65, 0.3);
+    background: linear-gradient(180deg, #ffffff 0%, #f7fcf8 100%);
 }
 
 .contact-card-icon {
@@ -127,7 +132,7 @@
     justify-content: center;
     font-size: 24px;
     color: #ffffff;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -172,7 +177,7 @@
     font-size: 13px;
     color: var(--text-muted);
     line-height: 1.55;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     flex-grow: 1;
 }
 
@@ -182,8 +187,8 @@
     justify-content: center;
     gap: 8px;
     width: 100%;
-    height: 44px;
-    border-radius: 8px;
+    height: 46px;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 13px;
     font-weight: 700;
@@ -203,16 +208,16 @@
 }
 
 .btn-card-whatsapp {
-    background-color: rgba(35, 155, 65, 0.08);
-    color: var(--brand-green);
-    border: 1px solid rgba(35, 155, 65, 0.25);
+    background-color: var(--brand-green);
+    color: #ffffff;
+    border: 1px solid var(--brand-green);
+    box-shadow: 0 4px 14px rgba(35, 155, 65, 0.28);
 }
 
 .btn-card-whatsapp:hover {
-    background-color: var(--brand-green);
-    color: #ffffff;
-    border-color: var(--brand-green);
-    box-shadow: 0 4px 12px rgba(35, 155, 65, 0.25);
+    background-color: #1c7c34;
+    border-color: #1c7c34;
+    box-shadow: 0 6px 18px rgba(35, 155, 65, 0.4);
 }
 
 .contact-card-tag {
@@ -222,45 +227,41 @@
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
     color: var(--brand-blue);
-    font-size: 12px;
-    font-weight: 600;
-    padding: 10px;
-    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 10px;
     text-align: center;
     width: 100%;
 }
 
 
 /* ==========================================
-   3. CONTACT FORM & HOURS (2-COLUMN)
+   3. DIRECT BOOKING GUIDE & HOURS (2-COLUMN)
    ========================================== */
-.contact-form-section {
-    padding: 30px 0 70px 0;
+.direct-booking-section {
+    padding: 40px 0 60px 0;
     background-color: #ffffff;
     width: 100%;
 }
 
-.contact-form-container {
+.direct-booking-container {
     max-width: 100%;
     width: auto;
     margin: 0 4%;
     display: grid;
-    grid-template-columns: 1.35fr 0.85fr;
+    grid-template-columns: 1.3fr 0.9fr;
     gap: 40px;
     align-items: flex-start;
 }
 
-/* Left Form Box */
-.form-wrapper {
-    background-color: #ffffff;
+/* Left Guide Box */
+.guide-box {
+    background-color: #fbfcfd;
     border: 1px solid #eef2f6;
     border-radius: 20px;
-    padding: 40px 35px;
-    box-shadow: 0 6px 25px rgba(11, 49, 84, 0.06);
-}
-
-.form-header {
-    margin-bottom: 30px;
+    padding: 45px 40px;
+    box-shadow: 0 6px 25px rgba(11, 49, 84, 0.05);
 }
 
 .section-badge {
@@ -276,117 +277,101 @@
     text-transform: uppercase;
 }
 
-.form-title {
+.guide-title {
     font-size: 28px;
     font-weight: 800;
     color: var(--brand-blue);
     letter-spacing: -0.5px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    line-height: 1.25;
 }
 
-.form-subtitle {
+.guide-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.guide-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 32px;
+}
+
+.guide-step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 14px;
+    padding: 18px 20px;
+    transition: all 0.25s ease;
+}
+
+.guide-step-item:hover {
+    border-color: var(--brand-green);
+    box-shadow: 0 4px 14px rgba(35, 155, 65, 0.08);
+}
+
+.guide-step-num {
+    width: 38px;
+    height: 38px;
+    background-color: var(--brand-green);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.guide-step-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.guide-step-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--brand-blue);
+}
+
+.guide-step-text {
     font-size: 13px;
     color: var(--text-muted);
     line-height: 1.5;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
-
-.form-group label {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--brand-blue);
-}
-
-.input-with-icon {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.input-with-icon i {
-    position: absolute;
-    left: 14px;
-    color: #a0aec0;
-    font-size: 14px;
-    pointer-events: none;
-}
-
-.input-with-icon input,
-.input-with-icon select,
-.input-with-icon textarea {
-    width: 100%;
-    padding: 12px 14px 12px 42px;
-    border: 1px solid #dce4ec;
-    border-radius: 10px;
-    font-size: 14px;
-    font-family: var(--font-main);
-    color: var(--text-dark);
-    background-color: #fbfcfd;
-    outline: none;
-    transition: all 0.25s ease;
-}
-
-.input-with-icon input:focus,
-.input-with-icon select:focus,
-.input-with-icon textarea:focus {
-    border-color: var(--brand-green);
-    background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgba(35, 155, 65, 0.12);
-}
-
-.input-textarea i {
-    top: 14px;
-}
-
-.input-with-icon textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-.submit-btn {
+.guide-cta-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     width: 100%;
-    height: 52px;
+    height: 54px;
     background-color: var(--brand-green);
     color: #ffffff;
-    border: none;
-    border-radius: 10px;
+    text-decoration: none;
+    border-radius: 12px;
     font-size: 15px;
     font-weight: 700;
-    font-family: var(--font-main);
-    cursor: pointer;
-    transition: all 0.25s ease;
     box-shadow: 0 4px 14px rgba(35, 155, 65, 0.3);
-    margin-top: 5px;
+    transition: all 0.25s ease;
 }
 
-.submit-btn:hover {
+.guide-cta-btn:hover {
     background-color: #1c7c34;
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(35, 155, 65, 0.4);
+    box-shadow: 0 8px 20px rgba(35, 155, 65, 0.4);
 }
 
-.submit-btn i {
+.guide-cta-btn i {
     font-size: 20px;
 }
 
@@ -402,8 +387,7 @@
     border: 1px solid #eef2f6;
     border-radius: 20px;
     padding: 35px 30px;
-    box-shadow: 0 6px 25px rgba(11, 49, 84, 0.06);
-    position: relative;
+    box-shadow: 0 6px 25px rgba(11, 49, 84, 0.05);
 }
 
 .hours-icon-box {
@@ -432,34 +416,51 @@
     margin-bottom: 20px;
 }
 
-.hours-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 24px 0;
+.contact-highlights-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 18px;
+    margin: 0;
     border-top: 1px solid #f1f4f8;
-    border-bottom: 1px solid #f1f4f8;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 22px;
 }
 
-.hours-list li {
+.highlight-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
+    align-items: flex-start;
+    gap: 14px;
 }
 
-.hours-list .day {
-    font-weight: 600;
+.highlight-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #f0fdf4;
+    border: 1px solid #dcfce7;
+    color: var(--brand-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.highlight-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.highlight-info strong {
+    font-size: 14px;
+    font-weight: 700;
     color: var(--brand-blue);
 }
 
-.hours-list .time {
-    color: var(--brand-green);
-    font-weight: 700;
+.highlight-info span {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.45;
 }
 
 .emergency-badge {
@@ -487,30 +488,30 @@
     gap: 2px;
 }
 
-.map-card {
+.advantage-card {
     background-color: var(--brand-blue);
     color: #ffffff;
     border-radius: 18px;
     padding: 26px 28px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 16px;
 }
 
-.map-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.advantage-icon {
+    font-size: 24px;
+    color: var(--accent-yellow);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.advantage-text h4 {
     font-size: 16px;
     font-weight: 700;
-    color: var(--accent-yellow);
+    margin-bottom: 6px;
 }
 
-.map-header i {
-    font-size: 20px;
-}
-
-.map-text {
+.advantage-text p {
     font-size: 13px;
     color: #cbdbee;
     line-height: 1.55;
@@ -518,14 +519,96 @@
 
 
 /* ==========================================
-   4. RESPONSIVE CONTACT STYLES
+   4. FAQ SECTION (SIKÇA SORULAN SORULAR)
+   ========================================== */
+.faq-section {
+    padding: 70px 0;
+    background-color: #fbfcfd;
+    border-top: 1px solid #f0f4f8;
+    width: 100%;
+}
+
+.faq-container {
+    max-width: 100%;
+    width: auto;
+    margin: 0 4%;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+}
+
+.section-main-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--brand-blue);
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    line-height: 1.25;
+}
+
+.section-main-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.faq-card {
+    background-color: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 16px;
+    padding: 30px 26px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 18px rgba(11, 49, 84, 0.04);
+    transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(11, 49, 84, 0.09);
+    border-color: #d6e2ee;
+}
+
+.faq-icon {
+    font-size: 24px;
+    color: var(--brand-green);
+    margin-bottom: 14px;
+}
+
+.faq-question {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--brand-blue);
+    margin-bottom: 10px;
+    line-height: 1.35;
+}
+
+.faq-answer {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+
+/* ==========================================
+   5. RESPONSIVE CONTACT STYLES
    ========================================== */
 
 /* Tablet Screens (<= 1024px) */
 @media (max-width: 1024px) {
     .page-banner-container,
     .contact-cards-container,
-    .contact-form-container {
+    .direct-booking-container,
+    .faq-container {
         margin: 0 3%;
     }
 
@@ -534,9 +617,14 @@
         gap: 20px;
     }
 
-    .contact-form-container {
+    .direct-booking-container {
         grid-template-columns: 1fr;
         gap: 35px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
@@ -548,12 +636,17 @@
 
     .page-banner-container,
     .contact-cards-container,
-    .contact-form-container {
+    .direct-booking-container,
+    .faq-container {
         margin: 0 16px;
     }
 
     .page-banner-title {
         font-size: 28px;
+    }
+
+    .section-main-title {
+        font-size: 26px;
     }
 
     .contact-cards-container {
@@ -563,17 +656,12 @@
         gap: 20px;
     }
 
-    .form-wrapper {
-        padding: 28px 20px;
+    .guide-box {
+        padding: 30px 22px;
     }
 
-    .form-title {
+    .guide-title {
         font-size: 24px;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 16px;
     }
 }
 
@@ -585,7 +673,8 @@
 
     .page-banner-container,
     .contact-cards-container,
-    .contact-form-container {
+    .direct-booking-container,
+    .faq-container {
         margin: 0 10px;
     }
 
@@ -593,7 +682,7 @@
         font-size: 24px;
     }
 
-    .form-title {
+    .section-main-title {
         font-size: 22px;
     }
 
@@ -603,5 +692,20 @@
 
     .contact-card-value {
         font-size: 19px;
+    }
+
+    .guide-box {
+        padding: 24px 18px;
+    }
+
+    .guide-step-item {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .guide-step-num {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
     }
 }
