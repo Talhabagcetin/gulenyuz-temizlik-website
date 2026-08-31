@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz - Gülen Yüz Temizlik</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Services Page Specific Stylesheet -->
+    <link rel="stylesheet" href="our-services.css">
+</head>
+<body>
+
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Logo Section -->
+            <a href="index.html" class="logo-container">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="#fbc02d" stroke="#000000" stroke-width="2.5"/>
+                        <circle cx="35" cy="40" r="5" fill="#000000"/>
+                        <circle cx="65" cy="40" r="5" fill="#000000"/>
+                        <path d="M 32 58 Q 50 82 68 58" fill="none" stroke="#000000" stroke-width="5.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <div class="brand-name">
+                        <span class="brand-blue">GÜLEN YÜZ</span>
+                        <span class="brand-green">TEMİZLİK</span>
+                    </div>
+                    <div class="brand-subtext">Temizlikte güven, hizmette güler yüz.</div>
+                </div>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="our-services.html" class="active">Hizmetlerimiz</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Neden Biz?</a></li>
+                    <li><a href="#">Galeri</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contact Buttons -->
+            <div class="header-contact">
+                <!-- Phone Call Button -->
+                <a href="tel:05458153566" class="contact-btn btn-phone">
+                    <div class="btn-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="btn-content">
+                        <span class="phone-number">0545 815 35 66</span>
+                        <span class="action-text">ARA</span>
+                    </div>
+                </a>
+                
+                <!-- WhatsApp Chat Button -->
+                <a href="https://wa.me/905318815469" target="_blank" class="contact-btn btn-whatsapp">
+                    <div class="btn-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="btn-content">
+                        <span class="phone-number">531 881 54 69</span>
+                        <span class="action-text">WHATSAPP</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header / Hero Banner -->
+        <section class="page-banner">
+            <div class="page-banner-container">
+                <div class="page-banner-content">
+                    <div class="breadcrumb">
+                        <a href="index.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
+                        <span>/</span>
+                        <span class="current">Hizmetlerimiz</span>
+                    </div>
+                    <h1 class="page-banner-title">Profesyonel Temizlik Hizmetlerimiz</h1>
+                    <p class="page-banner-desc">
+                        Evlerden iş yerlerine, inşaat sonrası alanlardan dış cephelere kadar tüm temizlik ihtiyaçlarınızda güvenilir ve hijyenik çözümler sunuyoruz.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Detailed Grid Section -->
+        <section class="services-detail-section">
+            <div class="services-detail-container">
+                <div class="section-intro">
+                    <span class="section-badge">NELER YAPIYORUZ?</span>
+                    <h2 class="section-main-title">İhtiyacınıza Özel Temizlik Çözümleri</h2>
+                    <p class="section-main-desc">Tüm hizmetlerimizde en kaliteli temizlik ürünleri, son teknoloji makineler ve alanında uzman ekiplerimizle çalışıyoruz.</p>
+                </div>
+
+                <div class="services-detail-grid">
+                    <!-- Service Card 1: Ev Temizliği -->
+                    <div class="service-detail-card">
+                        <div class="service-card-media">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80" alt="Ev ve Villa Temizliği">
+                        </div>
+                        <div class="service-card-badge-icon icon-blue">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <span class="service-category">Bireysel Temizlik</span>
+                            <h3 class="service-card-title">Ev ve Villa Temizliği</h3>
+                            <p class="service-card-text">
+                                Yaşam alanlarınızı baştan aşağı hijyene kavuşturuyoruz. Düzenli periyodik temizlik veya detaylı dip köşe temizlik seçeneklerimizle huzurlu bir ortam sunuyoruz.
+                            </p>
+                            <ul class="service-features-list">
+                                <li><i class="fa-solid fa-check"></i> Detaylı oda, salon ve zemin hijyeni</li>
+                                <li><i class="fa-solid fa-check"></i> Cam, çerçeve, kapı ve balkon temizliği</li>
+                                <li><i class="fa-solid fa-check"></i> Mutfak dolapları içi/dışı ve ankastre bakımı</li>
+                                <li><i class="fa-solid fa-check"></i> Banyo & tuvalet kireç ve dezenfeksiyonu</li>
+                            </ul>
+                            <div class="service-card-cta">
+                                <a href="https://wa.me/905318815469?text=Merhaba,%20Ev%20Temizliği%20hakkında%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" class="service-btn">
+                                    <i class="fa-brands fa-whatsapp"></i> Teklif Al
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2: Ofis Temizliği -->
+                    <div class="service-detail-card">
+                        <div class="service-card-media">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Ofis ve İş Yeri Temizliği">
+                        </div>
+                        <div class="service-card-badge-icon icon-green">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <span class="service-category">Kurumsal Temizlik</span>
+                            <h3 class="service-card-title">Ofis ve İş Yeri Temizliği</h3>
+                            <p class="service-card-text">
+                                Çalışanlarınız ve müşterileriniz için temiz, ferah ve prestijli bir çalışma ortamı sağlıyoruz. Mesai öncesi veya sonrası esnek çalışma saatleri.
+                            </p>
+                            <ul class="service-features-list">
+                                <li><i class="fa-solid fa-check"></i> Çalışma masaları, toplantı odaları hijyeni</li>
+                                <li><i class="fa-solid fa-check"></i> Elektronik ekipman hassas toz alımı</li>
+                                <li><i class="fa-solid fa-check"></i> Ortak mutfak, lavabo ve çöp yönetimi</li>
+                                <li><i class="fa-solid fa-check"></i> Zemin paspaslama ve sert zemin bakımı</li>
+                            </ul>
+                            <div class="service-card-cta">
+                                <a href="https://wa.me/905318815469?text=Merhaba,%20Ofis%20Temizliği%20hakkında%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" class="service-btn">
+                                    <i class="fa-brands fa-whatsapp"></i> Teklif Al
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3: Apartman Temizliği -->
+                    <div class="service-detail-card">
+                        <div class="service-card-media">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Apartman ve Merdiven Temizliği">
+                        </div>
+                        <div class="service-card-badge-icon icon-yellow">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <span class="service-category">Bina & Site Yönetimi</span>
+                            <h3 class="service-card-title">Apartman ve Merdiven Temizliği</h3>
+                            <p class="service-card-text">
+                                Apartman ve sitelerinizin ortak kullanım alanlarını düzenli periyotlarla pırıl pırıl yapıyoruz. Bina sakinlerine hijyenik bir giriş alanı sağlıyoruz.
+                            </p>
+                            <ul class="service-features-list">
+                                <li><i class="fa-solid fa-check"></i> Merdiven basamakları ve sahanlık silimi</li>
+                                <li><i class="fa-solid fa-check"></i> Merdiven korkulukları ve posta kutusu temizliği</li>
+                                <li><i class="fa-solid fa-check"></i> Asansör içi, aynalar ve buton dezenfeksiyonu</li>
+                                <li><i class="fa-solid fa-check"></i> Bina giriş camları ve dış kapı hijyeni</li>
+                            </ul>
+                            <div class="service-card-cta">
+                                <a href="https://wa.me/905318815469?text=Merhaba,%20Apartman%20Temizliği%20hakkında%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" class="service-btn">
+                                    <i class="fa-brands fa-whatsapp"></i> Teklif Al
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 4: İnşaat Sonrası Temizlik -->
+                    <div class="service-detail-card">
+                        <div class="service-card-media">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="İnşaat Sonrası Temizlik">
+                        </div>
+                        <div class="service-card-badge-icon icon-purple">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <span class="service-category">Detaylı Uzmanlık</span>
+                            <h3 class="service-card-title">İnşaat Sonrası Temizlik</h3>
+                            <p class="service-card-text">
+                                Yeni yapılan veya tadilattan çıkan mekanlardaki harç, boya, alçı ve yoğun toz kalıntılarını özel kimyasallar ve makinelerle temizliyoruz.
+                            </p>
+                            <ul class="service-features-list">
+                                <li><i class="fa-solid fa-check"></i> Kaba moloz ve ince inşaat tozu tasfiyesi</li>
+                                <li><i class="fa-solid fa-check"></i> Cam etiketleri, boya ve silikon kazıma</li>
+                                <li><i class="fa-solid fa-check"></i> Zemin derz araları ve parke hassas temizliği</li>
+                                <li><i class="fa-solid fa-check"></i> Hemen oturulmaya hazır anahtar teslim hijyen</li>
+                            </ul>
+                            <div class="service-card-cta">
+                                <a href="https://wa.me/905318815469?text=Merhaba,%20İnşaat%20Sonrası%20Temizlik%20hakkında%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" class="service-btn">
+                                    <i class="fa-brands fa-whatsapp"></i> Teklif Al
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 5: Bahçe Temizliği -->
+                    <div class="service-detail-card">
+                        <div class="service-card-media">
+                            <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=600&q=80" alt="Bahçe ve Dış Alan Temizliği">
+                        </div>
+                        <div class="service-card-badge-icon icon-light-green">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <span class="service-category">Açık Alan Bakımı</span>
+                            <h3 class="service-card-title">Bahçe ve Dış Alan Temizliği</h3>
+                            <p class="service-card-text">
+                                Bahçe, site çevresi, otopark ve açık yürüyüş alanlarının düzenli temizliği ile doğayla iç içe, ferah ve bakımlı yaşam alanları oluşturuyoruz.
+                            </p>
+                            <ul class="service-features-list">
+                                <li><i class="fa-solid fa-check"></i> Kuru yaprak, dal ve moloz temizliği</li>
+                                <li><i class="fa-solid fa-check"></i> Site içi yollar ve otopark süpürme/yıkama</li>
+                                <li><i class="fa-solid fa-check"></i> Çöp konteyner alanları dezenfeksiyonu</li>
+                                <li><i class="fa-solid fa-check"></i> Sezonluk genel çevre bakım çalışmaları</li>
+                            </ul>
+                            <div class="service-card-cta">
+                                <a href="https://wa.me/905318815469?text=Merhaba,%20Bahçe%20Temizliği%20hakkında%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" class="service-btn">
+                                    <i class="fa-brands fa-whatsapp"></i> Teklif Al
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 6: Koltuk ve Halı Yıkama -->
+                    <div class="service-detail-card">
+                        <div class="service-card-media">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Koltuk ve Yatak Yıkama">
+                        </div>
+                        <div class="service-card-badge-icon icon-blue">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <span class="service-category">Yerinde Yıkama</span>
+                            <h3 class="service-card-title">Koltuk ve Halı Yıkama</h3>
+                            <p class="service-card-text">
+                                Evinizde veya ofisinizde yerinde profesyonel vakumlu yıkama makineleriyle koltuk, sandalye, yatak ve halılarınızdaki inatçı lekeleri çıkarıyoruz.
+                            </p>
+                            <ul class="service-features-list">
+                                <li><i class="fa-solid fa-check"></i> Yüksek vakumlu derinlemesine kumaş temizliği</li>
+                                <li><i class="fa-solid fa-check"></i> Koku, mayt ve bakteri önleyici solüsyonlar</li>
+                                <li><i class="fa-solid fa-check"></i> Kumaş dokusuna ve rengine zarar vermeyen formül</li>
+                                <li><i class="fa-solid fa-check"></i> Kısa sürede kuruma ve ferah koku garantisi</li>
+                            </ul>
+                            <div class="service-card-cta">
+                                <a href="https://wa.me/905318815469?text=Merhaba,%20Koltuk%20Yıkama%20hakkında%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" class="service-btn">
+                                    <i class="fa-brands fa-whatsapp"></i> Teklif Al
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 7: Dış Cephe & Cam Temizliği -->
+                    <div class="service-detail-card">
+                        <div class="service-card-media">
+                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="Dış Cephe ve Cam Temizliği">
+                        </div>
+                        <div class="service-card-badge-icon icon-green">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <span class="service-category">Yüksek Bina & Vitrin</span>
+                            <h3 class="service-card-title">Dış Cephe ve Cam Temizliği</h3>
+                            <p class="service-card-text">
+                                Plaza, iş merkezi, mağaza vitrinleri ve yüksek binaların dış cephe camlarını güvenlik önlemleri ve profesyonel ekipmanlarla temizliyoruz.
+                            </p>
+                            <ul class="service-features-list">
+                                <li><i class="fa-solid fa-check"></i> Yüksek katlı binalar için özel donanım</li>
+                                <li><i class="fa-solid fa-check"></i> Kireç, is ve yağmur lekelerine karşı koruma</li>
+                                <li><i class="fa-solid fa-check"></i> Kompozit ve cam cephe parlatma</li>
+                                <li><i class="fa-solid fa-check"></i> Çiziksiz, lekesiz kristal berraklık</li>
+                            </ul>
+                            <div class="service-card-cta">
+                                <a href="https://wa.me/905318815469?text=Merhaba,%20Dış%20Cephe%20Cam%20Temizliği%20hakkında%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" class="service-btn">
+                                    <i class="fa-brands fa-whatsapp"></i> Teklif Al
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 8: Fabrika ve Depo Temizliği -->
+                    <div class="service-detail-card">
+                        <div class="service-card-media">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Fabrika ve Depo Temizliği">
+                        </div>
+                        <div class="service-card-badge-icon icon-purple">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <span class="service-category">Endüstriyel Hijyen</span>
+                            <h3 class="service-card-title">Fabrika ve Depo Temizliği</h3>
+                            <p class="service-card-text">
+                                Üretim tesisleri, atölyeler ve lojistik depolar için ağır kir ve endüstriyel yağlardan arındıran geniş kapsamlı temizlik çözümleri sunuyoruz.
+                            </p>
+                            <ul class="service-features-list">
+                                <li><i class="fa-solid fa-check"></i> Binicili zemin yıkama otomatları ile derin temizlik</li>
+                                <li><i class="fa-solid fa-check"></i> Endüstriyel yağ, leke ve toz arındırma</li>
+                                <li><i class="fa-solid fa-check"></i> Yüksek tavan, kiriş ve aydınlatma bakımı</li>
+                                <li><i class="fa-solid fa-check"></i> İş sağlığı ve güvenliği kurallarına tam uyum</li>
+                            </ul>
+                            <div class="service-card-cta">
+                                <a href="https://wa.me/905318815469?text=Merhaba,%20Fabrika%20ve%20Depo%20Temizliği%20hakkında%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" class="service-btn">
+                                    <i class="fa-brands fa-whatsapp"></i> Teklif Al
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section (4 Steps) -->
+        <section class="process-section">
+            <div class="process-container">
+                <div class="section-intro">
+                    <span class="section-badge">HİZMET SÜRECİMİZ</span>
+                    <h2 class="section-main-title">4 Adımda Kolay ve Hızlı Temizlik</h2>
+                    <p class="section-main-desc">Randevudan teslime kadar her aşamada şeffaf, güvenilir ve memnuniyet odaklı bir süreç yürütüyoruz.</p>
+                </div>
+
+                <div class="process-grid">
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <h3 class="step-title">İletişime Geçin</h3>
+                        <p class="step-desc">Telefon veya WhatsApp üzerinden bize ulaşarak temizlik ihtiyacınızı belirtin.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3 class="step-title">Fiyat Teklifi Alın</h3>
+                        <p class="step-desc">Mekanınızın durumuna göre en uygun ve şeffaf fiyat teklifimizi hazırlayalım.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-broom"></i>
+                        </div>
+                        <h3 class="step-title">Titiz Uygulama</h3>
+                        <p class="step-desc">Belirlenen gün ve saatte uzman ekibimiz ve kaliteli malzemelerimizle temizliğe başlayalım.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        <h3 class="step-title">Mutlu Teslimat</h3>
+                        <p class="step-desc">Birlikte yapacağımız son kontrollerin ardından tertemiz alanınızı güler yüzle teslim edelim.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Areas Section -->
+        <section class="areas-section">
+            <div class="areas-container">
+                <div class="areas-header">
+                    <i class="fa-solid fa-location-dot marker-icon"></i>
+                    <h2 class="areas-title">HİZMET BÖLGELERİMİZ</h2>
+                </div>
+                
+                <div class="areas-list">
+                    <span class="area-pill">İzmir</span>
+                    <span class="area-pill">Torbalı</span>
+                    <span class="area-pill">Menderes</span>
+                    <span class="area-pill">Gaziemir</span>
+                    <span class="area-pill">Çeşme</span>
+                    <span class="area-pill">Kuşadası</span>
+                    <span class="area-pill">Urla</span>
+                    <span class="area-pill">Gümüldür</span>
+                </div>
+                
+                <p class="areas-subtext">ve çevre bölgeler</p>
+            </div>
+        </section>
+
+        <!-- Promo Section (Free Quote / CTA) -->
+        <section class="promo-section">
+            <div class="promo-container">
+                <!-- Promo Text Content -->
+                <div class="promo-content">
+                    <h2 class="promo-title">Ücretsiz Keşif ve Fiyat Teklifi Alın!</h2>
+                    <p class="promo-subtitle">İhtiyacınıza uygun temizlik çözümleri için bize ulaşın, size özel teklifimizi sunalım.</p>
+                </div>
+                
+                <!-- Promo Action Buttons -->
+                <div class="promo-actions">
+                    <!-- Phone CTA Button -->
+                    <a href="tel:05458153566" class="promo-btn btn-promo-phone">
+                        <div class="promo-btn-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="promo-btn-text">
+                            <span class="num">0545 815 35 66</span>
+                            <span class="lbl">Telefon ile Ara</span>
+                        </div>
+                    </a>
+                    
+                    <!-- WhatsApp CTA Button -->
+                    <a href="https://wa.me/905318815469" target="_blank" class="promo-btn btn-promo-whatsapp">
+                        <div class="promo-btn-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="promo-btn-text">
+                            <span class="num">531 881 54 69</span>
+                            <span class="lbl">WhatsApp'tan Yaz</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section (Trust Badges) -->
+        <section class="features-section">
+            <div class="features-container">
+                <!-- Feature 1: Kaliteli Malzeme -->
+                <div class="feature-card">
+                    <div class="feature-badge-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="feature-badge-content">
+                        <h3 class="feature-badge-title">Kaliteli Malzeme</h3>
+                        <p class="feature-badge-desc">En kaliteli ve çevre dostu temizlik ürünleri kullanıyoruz.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 2: Uzman Kadro -->
+                <div class="feature-card">
+                    <div class="feature-badge-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="feature-badge-content">
+                        <h3 class="feature-badge-title">Uzman Kadro</h3>
+                        <p class="feature-badge-desc">Alanında deneyimli ve güler yüzlü ekibimizle hizmet veriyoruz.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 3: Zamanında Hizmet -->
+                <div class="feature-card">
+                    <div class="feature-badge-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="feature-badge-content">
+                        <h3 class="feature-badge-title">Zamanında Hizmet</h3>
+                        <p class="feature-badge-desc">Söz verdiğimiz zamanda temizlik hizmetimizi tamamlıyoruz.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 4: Müşteri Memnuniyeti -->
+                <div class="feature-card">
+                    <div class="feature-badge-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="feature-badge-content">
+                        <h3 class="feature-badge-title">%100 Müşteri Memnuniyeti</h3>
+                        <p class="feature-badge-desc">Müşteri memnuniyetini her zaman ön planda tutuyor, güvenle hizmet veriyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Footer Col 1: Logo & Slogan -->
+            <div class="footer-col col-logo">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Yellow circle with white border -->
+                            <circle cx="50" cy="50" r="45" fill="#fbc02d" stroke="#ffffff" stroke-width="2.5"/>
+                            <!-- Left eye -->
+                            <circle cx="35" cy="40" r="5" fill="#000000"/>
+                            <!-- Right eye -->
+                            <circle cx="65" cy="40" r="5" fill="#000000"/>
+                            <!-- Smile (Quadratic Bezier Curve) -->
+                            <path d="M 32 58 Q 50 82 68 58" fill="none" stroke="#000000" stroke-width="5.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="footer-logo-text">
+                        <span class="footer-brand-white">GÜLEN YÜZ</span>
+                        <span class="footer-brand-green">TEMİZLİK</span>
+                    </div>
+                </div>
+                <p class="footer-slogan">Temizlikte güven, hizmette güler yüz.</p>
+            </div>
+            
+            <!-- Footer Col 2: Hızlı Menü -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Hızlı Menü</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="our-services.html">Hizmetlerimiz</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+            
+            <!-- Footer Col 3: İletişim -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">İletişim</h4>
+                <ul class="footer-contact-info">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:05458153566">0545 815 35 66</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/905318815469" target="_blank">531 881 54 69</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>İzmir ve Çevresi</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Footer Col 4: Sosyal Medya -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Bizi Takip Edin</h4>
+                <div class="footer-socials">
+                    <a href="#" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright-text">&copy; 2024 Gülen Yüz Temizlik. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
