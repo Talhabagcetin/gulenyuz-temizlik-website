@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeri - Gülen Yüz Temizlik</title>
+    <title>İletişim - Gülen Yüz Temizlik</title>
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Global Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Gallery Specific Stylesheet -->
-    <link rel="stylesheet" href="gallery.css">
+    <!-- Contact Specific Stylesheet -->
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
@@ -46,8 +46,8 @@
                     <li><a href="our-services.html">Hizmetlerimiz</a></li>
                     <li><a href="about-us.html">Hakkımızda</a></li>
                     <li><a href="why-us.html">Neden Biz?</a></li>
-                    <li><a href="gallery.html" class="active">Galeri</a></li>
-                    <li><a href="contact.html">İletişim</a></li>
+                    <li><a href="gallery.html">Galeri</a></li>
+                    <li><a href="contact.html" class="active">İletişim</a></li>
                 </ul>
             </nav>
 
@@ -86,179 +86,190 @@
                     <div class="breadcrumb">
                         <a href="index.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
                         <span>/</span>
-                        <span class="current">Galeri</span>
+                        <span class="current">İletişim</span>
                     </div>
-                    <h1 class="page-banner-title">Temizlik Galerimiz</h1>
+                    <h1 class="page-banner-title">Bizimle İletişime Geçin</h1>
                     <p class="page-banner-desc">
-                        İzmir ve çevre ilçelerde tamamladığımız profesyonel ev, ofis, inşaat sonrası ve kurumsal temizlik çalışmalarımızdan fotoğraflar.
+                        Temizlik ihtiyaçlarınız, ücretsiz keşif ve hızlı fiyat teklifi için bize 7/24 dilediğiniz kanaldan ulaşabilirsiniz.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery Section -->
-        <section class="gallery-section">
-            <div class="gallery-container">
-                <div class="section-intro">
-                    <span class="section-badge">ÇALIŞMALARIMIZ</span>
-                    <h2 class="section-main-title">Işıl Işıl Yaşam Alanları</h2>
-                    <p class="section-main-desc">Titizlikle temizlediğimiz mekanlardan seçtiğimiz örnek kareleri inceleyebilirsiniz.</p>
+        <!-- Contact Cards Section (3 Cards) -->
+        <section class="contact-cards-section">
+            <div class="contact-cards-container">
+                <!-- Card 1: Phone -->
+                <div class="contact-info-card">
+                    <div class="contact-card-icon icon-blue">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <span class="contact-card-label">Telefon ile Arayın</span>
+                        <h3 class="contact-card-value">0545 815 35 66</h3>
+                        <p class="contact-card-desc">7 Gün 24 Saat kesintisiz arama ve acil randevu desteği.</p>
+                        <a href="tel:05458153566" class="contact-card-action btn-card-phone">
+                            <i class="fa-solid fa-phone-volume"></i> Hemen Ara
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Gallery Filter Buttons -->
-                <div class="gallery-filters">
-                    <button class="filter-btn active" data-filter="all">Tümü</button>
-                    <button class="filter-btn" data-filter="home">Ev & Villa</button>
-                    <button class="filter-btn" data-filter="office">Ofis & İş Yeri</button>
-                    <button class="filter-btn" data-filter="construction">İnşaat Sonrası</button>
-                    <button class="filter-btn" data-filter="upholstery">Koltuk & Halı</button>
-                    <button class="filter-btn" data-filter="outdoor">Dış Cephe & Bahçe</button>
+                <!-- Card 2: WhatsApp -->
+                <div class="contact-info-card">
+                    <div class="contact-card-icon icon-green">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <span class="contact-card-label">WhatsApp'tan Yazın</span>
+                        <h3 class="contact-card-value">531 881 54 69</h3>
+                        <p class="contact-card-desc">Fotoğraf veya detay göndererek anında hızlı teklif alın.</p>
+                        <a href="https://wa.me/905318815469" target="_blank" class="contact-card-action btn-card-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Mesaj Gönder
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Gallery Items Grid (12 Items) -->
-                <div class="gallery-grid">
-                    <!-- Item 1: Ev Temizliği - Salon -->
-                    <div class="gallery-item" data-category="home">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="Detaylı Ev ve Salon Temizliği">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Ev & Villa</span>
-                                <h3 class="gallery-item-title">Detaylı Salon Temizliği</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                <!-- Card 3: Location -->
+                <div class="contact-info-card">
+                    <div class="contact-card-icon icon-yellow">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <span class="contact-card-label">Hizmet Bölgemiz</span>
+                        <h3 class="contact-card-value">İzmir ve Çevresi</h3>
+                        <p class="contact-card-desc">Torbalı, Menderes, Gaziemir, Çeşme, Urla ve tüm ilçeler.</p>
+                        <span class="contact-card-tag">Mobil Saha Ekipleri</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Hours Section (2 Column) -->
+        <section class="contact-form-section">
+            <div class="contact-form-container">
+                <!-- Left: Form -->
+                <div class="form-wrapper">
+                    <div class="form-header">
+                        <span class="section-badge">HIZLI TEKLİF FORMU</span>
+                        <h2 class="form-title">Ücretsiz Fiyat Teklifi İsteyin</h2>
+                        <p class="form-subtitle">Formu doldurun, uzman ekibimiz en kısa sürede size özel fiyat teklifiyle geri dönüş yapsın.</p>
+                    </div>
+
+                    <form class="contact-form" id="quoteForm" onsubmit="event.preventDefault(); sendToWhatsApp();">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Adınız ve Soyadınız *</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="fullName" placeholder="Örn: Ahmet Yılmaz" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Telefon Numaranız *</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="tel" id="phoneNumber" placeholder="Örn: 0545 123 45 67" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="serviceType">Temizlik Hizmeti Türü *</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-broom"></i>
+                                    <select id="serviceType" required>
+                                        <option value="" disabled selected>Hizmet Seçiniz...</option>
+                                        <option value="Ev ve Villa Temizliği">Ev ve Villa Temizliği</option>
+                                        <option value="Ofis ve İş Yeri Temizliği">Ofis ve İş Yeri Temizliği</option>
+                                        <option value="İnşaat Sonrası Temizlik">İnşaat Sonrası Temizlik</option>
+                                        <option value="Koltuk ve Halı Yıkama">Koltuk ve Halı Yıkama</option>
+                                        <option value="Apartman ve Merdiven Temizliği">Apartman ve Merdiven Temizliği</option>
+                                        <option value="Bahçe ve Dış Alan Temizliği">Bahçe ve Dış Alan Temizliği</option>
+                                        <option value="Dış Cephe ve Cam Silimi">Dış Cephe ve Cam Silimi</option>
+                                        <option value="Fabrika ve Depo Temizliği">Fabrika ve Depo Temizliği</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="district">Bulunduğunuz İlçe / Bölge *</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <select id="district" required>
+                                        <option value="" disabled selected>İlçe Seçiniz...</option>
+                                        <option value="Gaziemir">Gaziemir</option>
+                                        <option value="Torbalı">Torbalı</option>
+                                        <option value="Menderes">Menderes</option>
+                                        <option value="Çeşme">Çeşme</option>
+                                        <option value="Kuşadası">Kuşadası</option>
+                                        <option value="Urla">Urla</option>
+                                        <option value="Gümüldür">Gümüldür</option>
+                                        <option value="Konak / Merkez">Konak / Merkez</option>
+                                        <option value="Bornova">Bornova</option>
+                                        <option value="Karşıyaka">Karşıyaka</option>
+                                        <option value="Diğer İzmir Bölgesi">Diğer İzmir Bölgesi</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mekan Detayları / Notunuz (Opsiyonel)</label>
+                            <div class="input-with-icon input-textarea">
+                                <i class="fa-solid fa-message"></i>
+                                <textarea id="message" rows="4" placeholder="Örn: 3+1 boş daire inşaat sonrası temizlik, balkon dahil..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Üzerinden Teklif Al
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Working Hours & Support Info -->
+                <div class="hours-info-wrapper">
+                    <!-- Hours Box -->
+                    <div class="hours-card">
+                        <div class="hours-icon-box">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3 class="hours-card-title">Çalışma Saatlerimiz</h3>
+                        <p class="hours-card-sub">Haftanın her günü kesintisiz hizmetinizdeyiz.</p>
+                        
+                        <ul class="hours-list">
+                            <li>
+                                <span class="day">Pazartesi - Cuma:</span>
+                                <span class="time">08:00 - 20:00</span>
+                            </li>
+                            <li>
+                                <span class="day">Cumartesi:</span>
+                                <span class="time">08:00 - 20:00</span>
+                            </li>
+                            <li>
+                                <span class="day">Pazar:</span>
+                                <span class="time">08:30 - 19:30</span>
+                            </li>
+                        </ul>
+
+                        <div class="emergency-badge">
+                            <i class="fa-solid fa-headset"></i>
+                            <div>
+                                <strong>7/24 WhatsApp & Telefon:</strong>
+                                <span>Acil randevu ve teklif talepleriniz anında yanıtlanır.</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 2: Mutfak Hijyeni -->
-                    <div class="gallery-item" data-category="home">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=80" alt="Mutfak ve Ankastre Temizliği">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Ev & Villa</span>
-                                <h3 class="gallery-item-title">Mutfak & Ankastre Hijyeni</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
+                    <!-- Map / Location Box -->
+                    <div class="map-card">
+                        <div class="map-header">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>İzmir Geneli Mobil Hizmet</span>
                         </div>
-                    </div>
-
-                    <!-- Item 3: Ofis & Çalışma Alanı -->
-                    <div class="gallery-item" data-category="office">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=80" alt="Modern Ofis Temizliği">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Ofis & İş Yeri</span>
-                                <h3 class="gallery-item-title">Kurumsal Ofis Temizliği</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 4: İnşaat Sonrası Daire -->
-                    <div class="gallery-item" data-category="construction">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=80" alt="İnşaat Sonrası Daire Temizliği">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">İnşaat Sonrası</span>
-                                <h3 class="gallery-item-title">Anahtar Teslim İnşaat Temizliği</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 5: Koltuk Yıkama -->
-                    <div class="gallery-item" data-category="upholstery">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Vakumlu Koltuk Yıkama">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Koltuk & Halı</span>
-                                <h3 class="gallery-item-title">Yerinde Derinlemesine Koltuk Yıkama</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 6: Banyo Sterilizasyonu -->
-                    <div class="gallery-item" data-category="home">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=700&q=80" alt="Banyo ve Fayans Dezenfeksiyonu">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Ev & Villa</span>
-                                <h3 class="gallery-item-title">Banyo Kireç & Derz Temizliği</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 7: Plaza & Dış Cephe Cam Silimi -->
-                    <div class="gallery-item" data-category="outdoor">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=700&q=80" alt="Dış Cephe Cam Temizliği">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Dış Cephe & Bahçe</span>
-                                <h3 class="gallery-item-title">Plaza & Dış Cephe Cam Silimi</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 8: Bahçe & Dış Alan -->
-                    <div class="gallery-item" data-category="outdoor">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=700&q=80" alt="Bahçe ve Çevre Temizliği">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Dış Cephe & Bahçe</span>
-                                <h3 class="gallery-item-title">Bahçe & Site Çevre Düzeni</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 9: Toplantı Odası & Ofis -->
-                    <div class="gallery-item" data-category="office">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=700&q=80" alt="Toplantı Salonu Hijyeni">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Ofis & İş Yeri</span>
-                                <h3 class="gallery-item-title">Toplantı Odası & Masa Bakımı</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 10: Villa Yaşam Alanı -->
-                    <div class="gallery-item" data-category="home">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=80" alt="Villa Detaylı Temizlik">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Ev & Villa</span>
-                                <h3 class="gallery-item-title">Villa Genel Temizliği</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 11: Zemin Cilalama & Parlatma -->
-                    <div class="gallery-item" data-category="construction">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=700&q=80" alt="Zemin Parlatma ve Temizlik">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">İnşaat Sonrası</span>
-                                <h3 class="gallery-item-title">Zemin Kazıma & Parlatma</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 12: Halı ve Yatak Yıkama -->
-                    <div class="gallery-item" data-category="upholstery">
-                        <div class="gallery-card">
-                            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=700&q=80" alt="Yatak ve Halı Yıkama">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Koltuk & Halı</span>
-                                <h3 class="gallery-item-title">Anti-Bakteriyel Yatak Hijyeni</h3>
-                                <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                            </div>
-                        </div>
+                        <p class="map-text">
+                            Ekiplerimiz tam donanımlı temizlik araçlarıyla adresinize gelerek yerinde hizmet vermektedir.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -450,29 +461,28 @@
         </div>
     </footer>
 
-    <!-- Filter JS Script -->
+    <!-- Form To WhatsApp JS Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const galleryItems = document.querySelectorAll('.gallery-item');
+        function sendToWhatsApp() {
+            const name = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phoneNumber').value.trim();
+            const service = document.getElementById('serviceType').value;
+            const district = document.getElementById('district').value;
+            const message = document.getElementById('message').value.trim();
 
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
+            let text = `*Yeni Temizlik Talebi (Web Sitesi Formu)*\n\n`;
+            text += `*Müşteri:* ${name}\n`;
+            text += `*Telefon:* ${phone}\n`;
+            text += `*Hizmet:* ${service}\n`;
+            text += `*Bölge / İlçe:* ${district}\n`;
+            if (message) {
+                text += `*Not:* ${message}\n`;
+            }
 
-                    const filterValue = this.getAttribute('data-filter');
-
-                    galleryItems.forEach(item => {
-                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        });
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/905318815469?text=${encodedText}`;
+            window.open(whatsappUrl, '_blank');
+        }
     </script>
 </body>
 </html>
