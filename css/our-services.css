@@ -195,23 +195,32 @@
 
 .service-card-badge-icon.icon-blue {
     background-color: var(--brand-blue);
+    color: #ffffff;
 }
 
 .service-card-badge-icon.icon-green {
     background-color: var(--brand-green);
+    color: #ffffff;
 }
 
 .service-card-badge-icon.icon-yellow {
     background-color: var(--accent-yellow);
-    color: #111111;
+    color: #ffffff;
+}
+
+.service-card-badge-icon.icon-orange {
+    background-color: #e67e22;
+    color: #ffffff;
 }
 
 .service-card-badge-icon.icon-purple {
     background-color: #8e44ad;
+    color: #ffffff;
 }
 
 .service-card-badge-icon.icon-light-green {
     background-color: #2ecc71;
+    color: #ffffff;
 }
 
 .service-card-body {
