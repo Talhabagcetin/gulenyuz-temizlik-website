@@ -55,12 +55,24 @@
       ]
     }
     </script>
-    <!-- Google Fonts: Poppins -->
+    <!-- Resource Hints: Early connections -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+
+    <!-- Preload Hero Background Image (LCP) -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=75" fetchpriority="high">
+
+    <!-- Google Fonts: Poppins (async / non-render-blocking) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Font Awesome Icons (async / non-render-blocking) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
     <!-- Global Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Homepage Specific Stylesheet -->
@@ -266,7 +278,7 @@
                     <!-- Card 1: Ev Temizliği -->
                     <div class="service-card">
                         <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=400&q=80" alt="Ev Temizliği" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=400&q=80" alt="Ev Temizliği" class="card-img" loading="lazy" width="400" height="220">
                         </div>
                         <div class="card-icon icon-green">
                             <i class="fa-solid fa-house"></i>
@@ -282,7 +294,7 @@
                     <!-- Card 2: Villa Temizliği -->
                     <div class="service-card">
                         <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=400&q=80" alt="Villa Temizliği" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=400&q=80" alt="Villa Temizliği" class="card-img" loading="lazy" width="400" height="220">
                         </div>
                         <div class="card-icon icon-yellow">
                             <i class="fa-solid fa-hotel"></i>
@@ -298,7 +310,7 @@
                     <!-- Card 3: Ofis Temizliği -->
                     <div class="service-card">
                         <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=80" alt="Ofis Temizliği" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=80" alt="Ofis Temizliği" class="card-img" loading="lazy" width="400" height="220">
                         </div>
                         <div class="card-icon icon-blue">
                             <i class="fa-solid fa-briefcase"></i>
@@ -314,7 +326,7 @@
                     <!-- Card 4: İş Yeri Temizliği -->
                     <div class="service-card">
                         <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=400&q=80" alt="İş Yeri Temizliği" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=400&q=80" alt="İş Yeri Temizliği" class="card-img" loading="lazy" width="400" height="220">
                         </div>
                         <div class="card-icon icon-light-green">
                             <i class="fa-solid fa-store"></i>
@@ -330,7 +342,7 @@
                     <!-- Card 5: İnşaat Sonrası Temizlik -->
                     <div class="service-card">
                         <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" alt="İnşaat Sonrası Temizlik" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" alt="İnşaat Sonrası Temizlik" class="card-img" loading="lazy" width="400" height="220">
                         </div>
                         <div class="card-icon icon-purple">
                             <i class="fa-solid fa-helmet-safety"></i>
@@ -346,7 +358,7 @@
                     <!-- Card 6: Merdiven Temizliği -->
                     <div class="service-card">
                         <div class="card-image-container">
-                            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=400&q=80" alt="Merdiven Temizliği" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=400&q=80" alt="Merdiven Temizliği" class="card-img" loading="lazy" width="400" height="220">
                         </div>
                         <div class="card-icon icon-orange">
                             <i class="fa-solid fa-stairs"></i>
