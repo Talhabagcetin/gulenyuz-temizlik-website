@@ -11,7 +11,7 @@
     --text-dark: #333333;         /* Primary text color */
     --text-muted: #666666;        /* Subtext and captions color */
     --bg-white: #ffffff;
-    --font-main: 'Poppins', sans-serif;
+    --font-main: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* 2. BASE RESET */
