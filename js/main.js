@@ -3,35 +3,6 @@
  * Handles mobile hamburger drawer menu, smooth transitions, and interactivity.
  */
 
-/**
- * Async Stylesheet Loader
- * Loads CSS files without blocking page render (eliminates render-blocking resources).
- */
-(function () {
-    var stylesheets = [
-        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
-        'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap'
-    ];
-
-    function loadStylesheet(href) {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = href;
-        document.head.appendChild(link);
-    }
-
-    if (window.requestIdleCallback) {
-        window.requestIdleCallback(function () {
-            stylesheets.forEach(loadStylesheet);
-        });
-    } else {
-        window.addEventListener('load', function () {
-            stylesheets.forEach(loadStylesheet);
-        });
-    }
-})();
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const mobileNavToggle = document.getElementById('mobileNavToggle');
     const mobileNavDrawer = document.getElementById('mobileNavDrawer');
